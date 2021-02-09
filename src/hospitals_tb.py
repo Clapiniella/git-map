@@ -2,7 +2,7 @@ import folium
 from folium.plugins import MarkerCluster
 import pandas as pd
 import requests
-print("\nLooking for answers...")
+
 def json_to_df(data):
     elements = data['elements']
     places = {'category': [], 'lat': [], 'lon': [], 'name': [], 'address': []}
@@ -49,8 +49,8 @@ for amenity in list_health:
 health_csv = pd.concat(dataframes)
 
 coordenadas_TB = (40.421703,-3.691725)
-print("\nFind your answers but not your data")
-print("Yet")
+
+
 some_map2 = folium.Map(location=coordenadas_TB, zoom_start=14)
 
 

@@ -66,7 +66,7 @@ message += "Deaths: " + df_final["Deaths"].astype(str) + "<br>"
 message += "Recovered: " + df_final["Recovered"].astype(str) + "<br>"
 message += "Last updated: " + df_final["Last_Update"].astype(str)
 df_final["text"] = message
-print("Looking for your data...")
+
 fig.add_trace(
     go.Scattergeo(
         locationmode = "country names",
