@@ -1,0 +1,3647 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b07d8544ce704fcf84c0be5abd9aae60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b07d8544ce704fcf84c0be5abd9aae60" ></div>
+        
+</body>
+<script>    
+    
+            var map_b07d8544ce704fcf84c0be5abd9aae60 = L.map(
+                "map_b07d8544ce704fcf84c0be5abd9aae60",
+                {
+                    center: [40.421703, -3.691725],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9d618fd25694c94979ad2cd74db0fd8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b07d8544ce704fcf84c0be5abd9aae60);
+        
+    
+            var marker_996e2519f0c84e42a1fcb2eef1d542b2 = L.marker(
+                [40.421703, -3.691725],
+                {}
+            ).addTo(map_b07d8544ce704fcf84c0be5abd9aae60);
+        
+    
+            var icon_4b28a658421f42b5be98941ab64832dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_996e2519f0c84e42a1fcb2eef1d542b2.setIcon(icon_4b28a658421f42b5be98941ab64832dc);
+        
+    
+        var popup_717594c2096e404090c00dd84c3e992a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7164c25d35d402caf906abffc075770 = $(`<div id="html_a7164c25d35d402caf906abffc075770" style="width: 100.0%; height: 100.0%;">The Bridge</div>`)[0];
+            popup_717594c2096e404090c00dd84c3e992a.setContent(html_a7164c25d35d402caf906abffc075770);
+        
+
+        marker_996e2519f0c84e42a1fcb2eef1d542b2.bindPopup(popup_717594c2096e404090c00dd84c3e992a)
+        ;
+
+        
+    
+    
+            var marker_cluster_88acb09d5da74b249680797f3a2e35ea = L.markerClusterGroup(
+                {}
+            );
+            map_b07d8544ce704fcf84c0be5abd9aae60.addLayer(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var marker_62e42baa6d8744e1b7c9076519c531ea = L.marker(
+                [40.4685882, -3.6364048],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7a80674141b74b279fcd304dd90539ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62e42baa6d8744e1b7c9076519c531ea.setIcon(icon_7a80674141b74b279fcd304dd90539ea);
+        
+    
+        var popup_7aa940ab1dd04f968c02e8e811034d82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9cdaba19e54c29818784cd4c2b7acd = $(`<div id="html_6c9cdaba19e54c29818784cd4c2b7acd" style="width: 100.0%; height: 100.0%;">Centro de especialidades Emigrantes</div>`)[0];
+            popup_7aa940ab1dd04f968c02e8e811034d82.setContent(html_6c9cdaba19e54c29818784cd4c2b7acd);
+        
+
+        marker_62e42baa6d8744e1b7c9076519c531ea.bindPopup(popup_7aa940ab1dd04f968c02e8e811034d82)
+        ;
+
+        
+    
+    
+            var marker_a4d846c7c05848a48f9e62976b07f8ac = L.marker(
+                [40.4290209, -3.6889198],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_459c6c10719f49f98232e1a9f76367e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4d846c7c05848a48f9e62976b07f8ac.setIcon(icon_459c6c10719f49f98232e1a9f76367e9);
+        
+    
+        var popup_456ca808f547469b8be8bf399b63f326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6af8c2b77c654a40beacccce65cec0f8 = $(`<div id="html_6af8c2b77c654a40beacccce65cec0f8" style="width: 100.0%; height: 100.0%;">Clínica Baviera</div>`)[0];
+            popup_456ca808f547469b8be8bf399b63f326.setContent(html_6af8c2b77c654a40beacccce65cec0f8);
+        
+
+        marker_a4d846c7c05848a48f9e62976b07f8ac.bindPopup(popup_456ca808f547469b8be8bf399b63f326)
+        ;
+
+        
+    
+    
+            var marker_b574795b9e4944e296c2023de73c5934 = L.marker(
+                [40.4592666, -3.6689294],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_23655a79041f455ebbdd17cfcad05a8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b574795b9e4944e296c2023de73c5934.setIcon(icon_23655a79041f455ebbdd17cfcad05a8d);
+        
+    
+        var popup_58e723ab27f54b3c8bb984262505e137 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e111cfd3c9543c5a82ab4a94f8d5f5e = $(`<div id="html_4e111cfd3c9543c5a82ab4a94f8d5f5e" style="width: 100.0%; height: 100.0%;">Centro médico Costa Rica</div>`)[0];
+            popup_58e723ab27f54b3c8bb984262505e137.setContent(html_4e111cfd3c9543c5a82ab4a94f8d5f5e);
+        
+
+        marker_b574795b9e4944e296c2023de73c5934.bindPopup(popup_58e723ab27f54b3c8bb984262505e137)
+        ;
+
+        
+    
+    
+            var marker_dfc0c009b81048109f3ea9da865ee673 = L.marker(
+                [40.4234652, -3.6271467],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b49f5f38d33f4498965cacac6892004d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfc0c009b81048109f3ea9da865ee673.setIcon(icon_b49f5f38d33f4498965cacac6892004d);
+        
+    
+        var popup_e2f02bd5ccf24b6ab8e7ea7415b33df5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad088cb7adc948debfbb05761565ef8a = $(`<div id="html_ad088cb7adc948debfbb05761565ef8a" style="width: 100.0%; height: 100.0%;">Centro de Especialidades González Bueno</div>`)[0];
+            popup_e2f02bd5ccf24b6ab8e7ea7415b33df5.setContent(html_ad088cb7adc948debfbb05761565ef8a);
+        
+
+        marker_dfc0c009b81048109f3ea9da865ee673.bindPopup(popup_e2f02bd5ccf24b6ab8e7ea7415b33df5)
+        ;
+
+        
+    
+    
+            var marker_b024b56448bd40a0a68d9fb770326d53 = L.marker(
+                [40.4325782, -3.7086334],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_6da6398a7e6949abba64f4c3a43a64cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b024b56448bd40a0a68d9fb770326d53.setIcon(icon_6da6398a7e6949abba64f4c3a43a64cb);
+        
+    
+        var popup_ba0137a0afaf40fc9d7857b83ad2282d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9c33ab4864942e7adb0e86e492b941c = $(`<div id="html_e9c33ab4864942e7adb0e86e492b941c" style="width: 100.0%; height: 100.0%;">Clínica del Dolor de Madrid</div>`)[0];
+            popup_ba0137a0afaf40fc9d7857b83ad2282d.setContent(html_e9c33ab4864942e7adb0e86e492b941c);
+        
+
+        marker_b024b56448bd40a0a68d9fb770326d53.bindPopup(popup_ba0137a0afaf40fc9d7857b83ad2282d)
+        ;
+
+        
+    
+    
+            var marker_1dc1f2dcc5744f68bf1daa371675da83 = L.marker(
+                [40.4660051, -3.6706322],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a9e2687f02064cba9823f3393994d611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1dc1f2dcc5744f68bf1daa371675da83.setIcon(icon_a9e2687f02064cba9823f3393994d611);
+        
+    
+        var popup_c5feb254b7fd49b88791873dd42cbdb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b146363ed2146a1bb65c4aeb229cb79 = $(`<div id="html_1b146363ed2146a1bb65c4aeb229cb79" style="width: 100.0%; height: 100.0%;">Hospital de Día Pio XII</div>`)[0];
+            popup_c5feb254b7fd49b88791873dd42cbdb5.setContent(html_1b146363ed2146a1bb65c4aeb229cb79);
+        
+
+        marker_1dc1f2dcc5744f68bf1daa371675da83.bindPopup(popup_c5feb254b7fd49b88791873dd42cbdb5)
+        ;
+
+        
+    
+    
+            var marker_862554b18ec34a869e68c196a5f908dd = L.marker(
+                [40.4634507, -3.6967219],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_eb54442a9fce4af5a193703656609556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_862554b18ec34a869e68c196a5f908dd.setIcon(icon_eb54442a9fce4af5a193703656609556);
+        
+    
+        var popup_5d2a06946fa442f3871734a2dbe9aa82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95694057deea4162b02fcd39e4370a2f = $(`<div id="html_95694057deea4162b02fcd39e4370a2f" style="width: 100.0%; height: 100.0%;">Centro de Especialidades José Marvá</div>`)[0];
+            popup_5d2a06946fa442f3871734a2dbe9aa82.setContent(html_95694057deea4162b02fcd39e4370a2f);
+        
+
+        marker_862554b18ec34a869e68c196a5f908dd.bindPopup(popup_5d2a06946fa442f3871734a2dbe9aa82)
+        ;
+
+        
+    
+    
+            var marker_975cb3da3e3a4882a3b3460435ab1408 = L.marker(
+                [40.4856286, -3.6899607],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_2fe6e90e7a5c4e098d67e25140dad53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_975cb3da3e3a4882a3b3460435ab1408.setIcon(icon_2fe6e90e7a5c4e098d67e25140dad53d);
+        
+    
+        var popup_b43205062b3f44bba824574209a106c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20bd048e4a6b4740a69a2e7a6a68dc10 = $(`<div id="html_20bd048e4a6b4740a69a2e7a6a68dc10" style="width: 100.0%; height: 100.0%;">Clínica dental</div>`)[0];
+            popup_b43205062b3f44bba824574209a106c2.setContent(html_20bd048e4a6b4740a69a2e7a6a68dc10);
+        
+
+        marker_975cb3da3e3a4882a3b3460435ab1408.bindPopup(popup_b43205062b3f44bba824574209a106c2)
+        ;
+
+        
+    
+    
+            var marker_8c4645b7458c48a9a43517b553eaca7c = L.marker(
+                [40.4841061, -3.6852867],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ba543b5961844455bcf75c828c0874e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c4645b7458c48a9a43517b553eaca7c.setIcon(icon_ba543b5961844455bcf75c828c0874e3);
+        
+    
+        var popup_dfdbbb31dd514980b74bf77c269eaee1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af859ab88d4345479fe357d1046747b2 = $(`<div id="html_af859ab88d4345479fe357d1046747b2" style="width: 100.0%; height: 100.0%;">Centro de Salud Virgen Begoña</div>`)[0];
+            popup_dfdbbb31dd514980b74bf77c269eaee1.setContent(html_af859ab88d4345479fe357d1046747b2);
+        
+
+        marker_8c4645b7458c48a9a43517b553eaca7c.bindPopup(popup_dfdbbb31dd514980b74bf77c269eaee1)
+        ;
+
+        
+    
+    
+            var marker_0ba30cf3b0924914a19db25c09696a2b = L.marker(
+                [40.400785, -3.6745008],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b87d2b3f69ff4f28aad8ce17526317e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ba30cf3b0924914a19db25c09696a2b.setIcon(icon_b87d2b3f69ff4f28aad8ce17526317e5);
+        
+    
+        var popup_42d855cd0a344cfb847dbea0a12f6513 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_375598f00a994084964ce50eb7df1fea = $(`<div id="html_375598f00a994084964ce50eb7df1fea" style="width: 100.0%; height: 100.0%;">Centro de Salud Adelfas</div>`)[0];
+            popup_42d855cd0a344cfb847dbea0a12f6513.setContent(html_375598f00a994084964ce50eb7df1fea);
+        
+
+        marker_0ba30cf3b0924914a19db25c09696a2b.bindPopup(popup_42d855cd0a344cfb847dbea0a12f6513)
+        ;
+
+        
+    
+    
+            var marker_af7f9a408ae9478188810c99e0d522b8 = L.marker(
+                [40.4724003, -3.6423344],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_66e6c836223946439ee7658efdcf1b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af7f9a408ae9478188810c99e0d522b8.setIcon(icon_66e6c836223946439ee7658efdcf1b5c);
+        
+    
+        var popup_643d9b19e1774e408e6de873aaaefd95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f63990859a7492aa07d497087b045c7 = $(`<div id="html_3f63990859a7492aa07d497087b045c7" style="width: 100.0%; height: 100.0%;">Centro de Salud Mar Báltico</div>`)[0];
+            popup_643d9b19e1774e408e6de873aaaefd95.setContent(html_3f63990859a7492aa07d497087b045c7);
+        
+
+        marker_af7f9a408ae9478188810c99e0d522b8.bindPopup(popup_643d9b19e1774e408e6de873aaaefd95)
+        ;
+
+        
+    
+    
+            var marker_6b047616626c49a98e96865a583e7aaf = L.marker(
+                [40.5069289, -3.6667094],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c8553f23a67648ee94e8e09e451f0b8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b047616626c49a98e96865a583e7aaf.setIcon(icon_c8553f23a67648ee94e8e09e451f0b8d);
+        
+    
+        var popup_bc05026cd8854bda9719b8bf9dc9e6c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3d6c1dc3d154984a4242d8c186a8a35 = $(`<div id="html_a3d6c1dc3d154984a4242d8c186a8a35" style="width: 100.0%; height: 100.0%;">Sanitas Las Tablas</div>`)[0];
+            popup_bc05026cd8854bda9719b8bf9dc9e6c6.setContent(html_a3d6c1dc3d154984a4242d8c186a8a35);
+        
+
+        marker_6b047616626c49a98e96865a583e7aaf.bindPopup(popup_bc05026cd8854bda9719b8bf9dc9e6c6)
+        ;
+
+        
+    
+    
+            var marker_915d13483fc84f74b36b17f0bc0f0f3b = L.marker(
+                [40.4164906, -3.6989912],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_81c9470d06194b04ba6a3ff4a5475795 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_915d13483fc84f74b36b17f0bc0f0f3b.setIcon(icon_81c9470d06194b04ba6a3ff4a5475795);
+        
+    
+        var popup_6dc0684b8c004468bb448ee9a7c204bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2af01d42ee014c5cbf67b0bf174df36a = $(`<div id="html_2af01d42ee014c5cbf67b0bf174df36a" style="width: 100.0%; height: 100.0%;">Centro de Salud Las Cortes</div>`)[0];
+            popup_6dc0684b8c004468bb448ee9a7c204bb.setContent(html_2af01d42ee014c5cbf67b0bf174df36a);
+        
+
+        marker_915d13483fc84f74b36b17f0bc0f0f3b.bindPopup(popup_6dc0684b8c004468bb448ee9a7c204bb)
+        ;
+
+        
+    
+    
+            var marker_0f5401ebaab54810b5923c33f57f1a26 = L.marker(
+                [40.4623282, -3.6953969],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ef2d52b6c537480983c3af81992ed775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f5401ebaab54810b5923c33f57f1a26.setIcon(icon_ef2d52b6c537480983c3af81992ed775);
+        
+    
+        var popup_bcbed3a73c4948c1b8c52fbf311b1306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79f57faee29b4d7aac673da88e85e994 = $(`<div id="html_79f57faee29b4d7aac673da88e85e994" style="width: 100.0%; height: 100.0%;">Centro de Salud Bustarviejo</div>`)[0];
+            popup_bcbed3a73c4948c1b8c52fbf311b1306.setContent(html_79f57faee29b4d7aac673da88e85e994);
+        
+
+        marker_0f5401ebaab54810b5923c33f57f1a26.bindPopup(popup_bcbed3a73c4948c1b8c52fbf311b1306)
+        ;
+
+        
+    
+    
+            var marker_a8e5aa7009e345d084284d034d3be24b = L.marker(
+                [40.4311082, -3.7067605],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_cd8289389f3440b7981c891da7782af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8e5aa7009e345d084284d034d3be24b.setIcon(icon_cd8289389f3440b7981c891da7782af3);
+        
+    
+        var popup_323919cc42bd456cbb5666e18f7bb5ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23050a8aa0cb47e3936abf8ee9688005 = $(`<div id="html_23050a8aa0cb47e3936abf8ee9688005" style="width: 100.0%; height: 100.0%;">Leven</div>`)[0];
+            popup_323919cc42bd456cbb5666e18f7bb5ba.setContent(html_23050a8aa0cb47e3936abf8ee9688005);
+        
+
+        marker_a8e5aa7009e345d084284d034d3be24b.bindPopup(popup_323919cc42bd456cbb5666e18f7bb5ba)
+        ;
+
+        
+    
+    
+            var marker_793fa88648d7481bac85fdab87df2d16 = L.marker(
+                [40.4079866, -3.6769916],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a017c936fb6c40e991c34095f2cf8b75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_793fa88648d7481bac85fdab87df2d16.setIcon(icon_a017c936fb6c40e991c34095f2cf8b75);
+        
+    
+        var popup_62bcd7c50a9f46cf9778e40b69f51caa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b84fcb7ded8425380f5d3bc84d76971 = $(`<div id="html_2b84fcb7ded8425380f5d3bc84d76971" style="width: 100.0%; height: 100.0%;">Centro de Salud Pacífico</div>`)[0];
+            popup_62bcd7c50a9f46cf9778e40b69f51caa.setContent(html_2b84fcb7ded8425380f5d3bc84d76971);
+        
+
+        marker_793fa88648d7481bac85fdab87df2d16.bindPopup(popup_62bcd7c50a9f46cf9778e40b69f51caa)
+        ;
+
+        
+    
+    
+            var marker_b922fe5cdb15482380fd3004ba542ef8 = L.marker(
+                [40.4257079, -3.6887819],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_115582663f5348d8b1da1293bbd7435d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b922fe5cdb15482380fd3004ba542ef8.setIcon(icon_115582663f5348d8b1da1293bbd7435d);
+        
+    
+        var popup_551dc2d0f9e94b69a3caa88a07ee7fc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c7e40422da84e99bcd99d3a1d0f69e3 = $(`<div id="html_8c7e40422da84e99bcd99d3a1d0f69e3" style="width: 100.0%; height: 100.0%;">Dr Emilio Santos - Ginecología</div>`)[0];
+            popup_551dc2d0f9e94b69a3caa88a07ee7fc4.setContent(html_8c7e40422da84e99bcd99d3a1d0f69e3);
+        
+
+        marker_b922fe5cdb15482380fd3004ba542ef8.bindPopup(popup_551dc2d0f9e94b69a3caa88a07ee7fc4)
+        ;
+
+        
+    
+    
+            var marker_a8fb757ac99f41eb8215e409bf17729d = L.marker(
+                [40.4295088, -3.7092051],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_2e5ebfa02c074f1c9201a8efbfa7f37d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8fb757ac99f41eb8215e409bf17729d.setIcon(icon_2e5ebfa02c074f1c9201a8efbfa7f37d);
+        
+    
+        var popup_fe51e0a462654ce9ac69074a109d7029 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1da07c9dc4f24694aad660ca5ea8f544 = $(`<div id="html_1da07c9dc4f24694aad660ca5ea8f544" style="width: 100.0%; height: 100.0%;">Centro Médico Conde Duque</div>`)[0];
+            popup_fe51e0a462654ce9ac69074a109d7029.setContent(html_1da07c9dc4f24694aad660ca5ea8f544);
+        
+
+        marker_a8fb757ac99f41eb8215e409bf17729d.bindPopup(popup_fe51e0a462654ce9ac69074a109d7029)
+        ;
+
+        
+    
+    
+            var marker_d1db93d02eb341588d3a5a93d6994cfa = L.marker(
+                [40.4265395, -3.7072908],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_0c30941481c64d788a66e8b310d148fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1db93d02eb341588d3a5a93d6994cfa.setIcon(icon_0c30941481c64d788a66e8b310d148fb);
+        
+    
+        var popup_5e10396e0cfc48d6866c7f9eb56ecb1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2a2f8aeefbf4fe280f31dc2397e5334 = $(`<div id="html_b2a2f8aeefbf4fe280f31dc2397e5334" style="width: 100.0%; height: 100.0%;">Centro Salud Palma Norte</div>`)[0];
+            popup_5e10396e0cfc48d6866c7f9eb56ecb1b.setContent(html_b2a2f8aeefbf4fe280f31dc2397e5334);
+        
+
+        marker_d1db93d02eb341588d3a5a93d6994cfa.bindPopup(popup_5e10396e0cfc48d6866c7f9eb56ecb1b)
+        ;
+
+        
+    
+    
+            var marker_48f3d01f394841869d547f00bb1858a9 = L.marker(
+                [40.4281266, -3.7064138],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_02da6732a1954e5f86843e9d58725b24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48f3d01f394841869d547f00bb1858a9.setIcon(icon_02da6732a1954e5f86843e9d58725b24);
+        
+    
+        var popup_035124279ea54488a13f882963eac336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_467c60de30414adfac1d6e1c6e6180db = $(`<div id="html_467c60de30414adfac1d6e1c6e6180db" style="width: 100.0%; height: 100.0%;">Coro Clínica Oftalmológica</div>`)[0];
+            popup_035124279ea54488a13f882963eac336.setContent(html_467c60de30414adfac1d6e1c6e6180db);
+        
+
+        marker_48f3d01f394841869d547f00bb1858a9.bindPopup(popup_035124279ea54488a13f882963eac336)
+        ;
+
+        
+    
+    
+            var marker_bcb43baa6dd846be854fcd38459f68b0 = L.marker(
+                [40.4674792, -3.6759625],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_005831fff7d44abbba2b2c98cf33dc7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcb43baa6dd846be854fcd38459f68b0.setIcon(icon_005831fff7d44abbba2b2c98cf33dc7f);
+        
+    
+        var popup_f31a3126abda42f1a3b4360668456805 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd810592782e4984baf0368ca49b1a33 = $(`<div id="html_bd810592782e4984baf0368ca49b1a33" style="width: 100.0%; height: 100.0%;">Clínica Colmenero</div>`)[0];
+            popup_f31a3126abda42f1a3b4360668456805.setContent(html_bd810592782e4984baf0368ca49b1a33);
+        
+
+        marker_bcb43baa6dd846be854fcd38459f68b0.bindPopup(popup_f31a3126abda42f1a3b4360668456805)
+        ;
+
+        
+    
+    
+            var marker_e34751e0ce7442e1a1e56925b1c9d307 = L.marker(
+                [40.454471, -3.6962426],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_aaddf6f1656a4aeb88a2f81e9c666d65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e34751e0ce7442e1a1e56925b1c9d307.setIcon(icon_aaddf6f1656a4aeb88a2f81e9c666d65);
+        
+    
+        var popup_6d5263d2b7e54af89bd3f4c1a64378e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26218d90fd8c445a8bbda60b17bd524f = $(`<div id="html_26218d90fd8c445a8bbda60b17bd524f" style="width: 100.0%; height: 100.0%;">Tu podólogo</div>`)[0];
+            popup_6d5263d2b7e54af89bd3f4c1a64378e3.setContent(html_26218d90fd8c445a8bbda60b17bd524f);
+        
+
+        marker_e34751e0ce7442e1a1e56925b1c9d307.bindPopup(popup_6d5263d2b7e54af89bd3f4c1a64378e3)
+        ;
+
+        
+    
+    
+            var marker_30a63a460d0d423da74364b6973f3bd7 = L.marker(
+                [40.407934, -3.703684],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_07e1aebe6db04a26ae0a1462c9860592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30a63a460d0d423da74364b6973f3bd7.setIcon(icon_07e1aebe6db04a26ae0a1462c9860592);
+        
+    
+        var popup_df39ce725dc54f309a5e95fd32d8b7b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8349158f075a4d4792e7fe64e66a0608 = $(`<div id="html_8349158f075a4d4792e7fe64e66a0608" style="width: 100.0%; height: 100.0%;">Centro de Salud Lavapiés</div>`)[0];
+            popup_df39ce725dc54f309a5e95fd32d8b7b1.setContent(html_8349158f075a4d4792e7fe64e66a0608);
+        
+
+        marker_30a63a460d0d423da74364b6973f3bd7.bindPopup(popup_df39ce725dc54f309a5e95fd32d8b7b1)
+        ;
+
+        
+    
+    
+            var marker_697cc72bbae3475abc474ac6d976e69e = L.marker(
+                [40.4103252, -3.7077739],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_94e341c4d5b14aad99a3fbaf89272059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_697cc72bbae3475abc474ac6d976e69e.setIcon(icon_94e341c4d5b14aad99a3fbaf89272059);
+        
+    
+        var popup_8dad8c4babb54a06a8187bbe2f73693f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ede954c2590f465abd93e40c09aaa42b = $(`<div id="html_ede954c2590f465abd93e40c09aaa42b" style="width: 100.0%; height: 100.0%;">Fisioescénica</div>`)[0];
+            popup_8dad8c4babb54a06a8187bbe2f73693f.setContent(html_ede954c2590f465abd93e40c09aaa42b);
+        
+
+        marker_697cc72bbae3475abc474ac6d976e69e.bindPopup(popup_8dad8c4babb54a06a8187bbe2f73693f)
+        ;
+
+        
+    
+    
+            var marker_5de87bf02b1a459c98ddd219f7cbbbcf = L.marker(
+                [40.4209634, -3.704637],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_30c1eb1ec7af45a99d40086a09586f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5de87bf02b1a459c98ddd219f7cbbbcf.setIcon(icon_30c1eb1ec7af45a99d40086a09586f89);
+        
+    
+        var popup_4ac6e10523674f66b064262678cd7d5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93fe47523f964d95ae46ae703c02772a = $(`<div id="html_93fe47523f964d95ae46ae703c02772a" style="width: 100.0%; height: 100.0%;">Clínica Callao</div>`)[0];
+            popup_4ac6e10523674f66b064262678cd7d5d.setContent(html_93fe47523f964d95ae46ae703c02772a);
+        
+
+        marker_5de87bf02b1a459c98ddd219f7cbbbcf.bindPopup(popup_4ac6e10523674f66b064262678cd7d5d)
+        ;
+
+        
+    
+    
+            var marker_d03af02aca6c46efa0419d54f8a1955d = L.marker(
+                [40.4578572, -3.7062712],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_3b7614cf0d424e9cb6e87a400e345269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d03af02aca6c46efa0419d54f8a1955d.setIcon(icon_3b7614cf0d424e9cb6e87a400e345269);
+        
+    
+        var popup_da3414c39dc74770a8e2c18d7ca0d96a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a008fde34c5c4902a5bc5c365ff2b5f6 = $(`<div id="html_a008fde34c5c4902a5bc5c365ff2b5f6" style="width: 100.0%; height: 100.0%;">Centro de Salud Villaamil</div>`)[0];
+            popup_da3414c39dc74770a8e2c18d7ca0d96a.setContent(html_a008fde34c5c4902a5bc5c365ff2b5f6);
+        
+
+        marker_d03af02aca6c46efa0419d54f8a1955d.bindPopup(popup_da3414c39dc74770a8e2c18d7ca0d96a)
+        ;
+
+        
+    
+    
+            var marker_21797a1a3931486a9e4f936e94764969 = L.marker(
+                [40.4629187, -3.7022656],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_01f199f18d994c77a6b0a6ce3c7e5fa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21797a1a3931486a9e4f936e94764969.setIcon(icon_01f199f18d994c77a6b0a6ce3c7e5fa2);
+        
+    
+        var popup_f36ccec6f2824997a9b1095e33170ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29cb9d1441fe49598bb6943fa8771126 = $(`<div id="html_29cb9d1441fe49598bb6943fa8771126" style="width: 100.0%; height: 100.0%;">Inion</div>`)[0];
+            popup_f36ccec6f2824997a9b1095e33170ba0.setContent(html_29cb9d1441fe49598bb6943fa8771126);
+        
+
+        marker_21797a1a3931486a9e4f936e94764969.bindPopup(popup_f36ccec6f2824997a9b1095e33170ba0)
+        ;
+
+        
+    
+    
+            var marker_436b66bade654f0c8aab2e96391a5f3a = L.marker(
+                [40.438284, -3.6371164],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_fe12ac9a151e4f49b98e8e14b6590b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_436b66bade654f0c8aab2e96391a5f3a.setIcon(icon_fe12ac9a151e4f49b98e8e14b6590b53);
+        
+    
+        var popup_1422536bb9d04725a2397fd494337d46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e951e91c4f704f48a4a1b506c69aa76b = $(`<div id="html_e951e91c4f704f48a4a1b506c69aa76b" style="width: 100.0%; height: 100.0%;">Centro de Salud Av. de Aragón</div>`)[0];
+            popup_1422536bb9d04725a2397fd494337d46.setContent(html_e951e91c4f704f48a4a1b506c69aa76b);
+        
+
+        marker_436b66bade654f0c8aab2e96391a5f3a.bindPopup(popup_1422536bb9d04725a2397fd494337d46)
+        ;
+
+        
+    
+    
+            var marker_64b5ea9f14864430b29af543ad676296 = L.marker(
+                [40.4714227, -3.6988481],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7f2bcdb185774328a002b4623e6e61d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64b5ea9f14864430b29af543ad676296.setIcon(icon_7f2bcdb185774328a002b4623e6e61d8);
+        
+    
+        var popup_6ef5fa727e0747249277856e1d27c95e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fee780ced4e743d4913a999c21757a44 = $(`<div id="html_fee780ced4e743d4913a999c21757a44" style="width: 100.0%; height: 100.0%;">Centro de Salud La Ventilla</div>`)[0];
+            popup_6ef5fa727e0747249277856e1d27c95e.setContent(html_fee780ced4e743d4913a999c21757a44);
+        
+
+        marker_64b5ea9f14864430b29af543ad676296.bindPopup(popup_6ef5fa727e0747249277856e1d27c95e)
+        ;
+
+        
+    
+    
+            var marker_e6a5a38ebc9943889c645ae7018e35a1 = L.marker(
+                [40.4295818, -3.7073977],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_144e188f9e7c47d8a0b3519e662ee99d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6a5a38ebc9943889c645ae7018e35a1.setIcon(icon_144e188f9e7c47d8a0b3519e662ee99d);
+        
+    
+        var popup_376152adcbce43b1bf3a83037c4fa551 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f25ac7ea16a4e23a44a7117adc75624 = $(`<div id="html_4f25ac7ea16a4e23a44a7117adc75624" style="width: 100.0%; height: 100.0%;">Ecox 4D</div>`)[0];
+            popup_376152adcbce43b1bf3a83037c4fa551.setContent(html_4f25ac7ea16a4e23a44a7117adc75624);
+        
+
+        marker_e6a5a38ebc9943889c645ae7018e35a1.bindPopup(popup_376152adcbce43b1bf3a83037c4fa551)
+        ;
+
+        
+    
+    
+            var marker_67b9cf4b00e64d64ac1d55d3d3c84ad5 = L.marker(
+                [40.4539943, -3.6989537],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_15dcc0f0a4d6481c8b9cb1c9b1f666a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67b9cf4b00e64d64ac1d55d3d3c84ad5.setIcon(icon_15dcc0f0a4d6481c8b9cb1c9b1f666a5);
+        
+    
+        var popup_1ad635329b8a411780583bdbc53cfca9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23e51ec8d2e648a5930f3331a3b7e822 = $(`<div id="html_23e51ec8d2e648a5930f3331a3b7e822" style="width: 100.0%; height: 100.0%;">Centro Médico Infanta Mercedes</div>`)[0];
+            popup_1ad635329b8a411780583bdbc53cfca9.setContent(html_23e51ec8d2e648a5930f3331a3b7e822);
+        
+
+        marker_67b9cf4b00e64d64ac1d55d3d3c84ad5.bindPopup(popup_1ad635329b8a411780583bdbc53cfca9)
+        ;
+
+        
+    
+    
+            var marker_ca1033d4740f44928b9bdba5c8986b16 = L.marker(
+                [40.4229131, -3.7068382],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c57efd88d61b42dda9ccfbad60656e79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca1033d4740f44928b9bdba5c8986b16.setIcon(icon_c57efd88d61b42dda9ccfbad60656e79);
+        
+    
+        var popup_885e9483e85147fdb4606c9394d5e1a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0fbf0121f2a4116ad11626632e63484 = $(`<div id="html_b0fbf0121f2a4116ad11626632e63484" style="width: 100.0%; height: 100.0%;">Luna</div>`)[0];
+            popup_885e9483e85147fdb4606c9394d5e1a9.setContent(html_b0fbf0121f2a4116ad11626632e63484);
+        
+
+        marker_ca1033d4740f44928b9bdba5c8986b16.bindPopup(popup_885e9483e85147fdb4606c9394d5e1a9)
+        ;
+
+        
+    
+    
+            var marker_1cf82cfc9ae74a96a33033e222c44e82 = L.marker(
+                [40.4700737, -3.6909792],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_1beb42f31d924f62bbf7a01c6c43a2ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cf82cfc9ae74a96a33033e222c44e82.setIcon(icon_1beb42f31d924f62bbf7a01c6c43a2ee);
+        
+    
+        var popup_d8d2b59168b841e58839edfdfd8f300a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ee11c357ad34205bb2adb880779e582 = $(`<div id="html_8ee11c357ad34205bb2adb880779e582" style="width: 100.0%; height: 100.0%;">Podólogo - Clínica Los Cedros</div>`)[0];
+            popup_d8d2b59168b841e58839edfdfd8f300a.setContent(html_8ee11c357ad34205bb2adb880779e582);
+        
+
+        marker_1cf82cfc9ae74a96a33033e222c44e82.bindPopup(popup_d8d2b59168b841e58839edfdfd8f300a)
+        ;
+
+        
+    
+    
+            var marker_3afccc9b0afb41feadecd1c0a505df73 = L.marker(
+                [40.4733028, -3.6879504],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_f127c80d057440fda265e9597f009346 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3afccc9b0afb41feadecd1c0a505df73.setIcon(icon_f127c80d057440fda265e9597f009346);
+        
+    
+        var popup_6707ed86e5b142e080b5c2555d282e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43f9a697cf604bff9e022df7f001e3fd = $(`<div id="html_43f9a697cf604bff9e022df7f001e3fd" style="width: 100.0%; height: 100.0%;">Royal Model</div>`)[0];
+            popup_6707ed86e5b142e080b5c2555d282e22.setContent(html_43f9a697cf604bff9e022df7f001e3fd);
+        
+
+        marker_3afccc9b0afb41feadecd1c0a505df73.bindPopup(popup_6707ed86e5b142e080b5c2555d282e22)
+        ;
+
+        
+    
+    
+            var marker_c0742495d98e4ab285cb782dbe2ee77b = L.marker(
+                [40.4653709, -3.6935384],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e71de8a5f3264bf0b98db3e3b6bb95ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0742495d98e4ab285cb782dbe2ee77b.setIcon(icon_e71de8a5f3264bf0b98db3e3b6bb95ce);
+        
+    
+        var popup_7264ef13500f491193c30d179deea1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709d4abf1c1a4d81a43aa96c20cc5088 = $(`<div id="html_709d4abf1c1a4d81a43aa96c20cc5088" style="width: 100.0%; height: 100.0%;">Centro Madrid Salud de Tetuán</div>`)[0];
+            popup_7264ef13500f491193c30d179deea1a6.setContent(html_709d4abf1c1a4d81a43aa96c20cc5088);
+        
+
+        marker_c0742495d98e4ab285cb782dbe2ee77b.bindPopup(popup_7264ef13500f491193c30d179deea1a6)
+        ;
+
+        
+    
+    
+            var marker_ce388713f7d44bfbbd345871afa8e87e = L.marker(
+                [40.4265059, -3.7061199],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b277ee26173847898dbd864f098331e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce388713f7d44bfbbd345871afa8e87e.setIcon(icon_b277ee26173847898dbd864f098331e4);
+        
+    
+        var popup_debf97d33a4948b78abde32574b6c6cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09984c231d0d45498c26183838e0be61 = $(`<div id="html_09984c231d0d45498c26183838e0be61" style="width: 100.0%; height: 100.0%;">Centro de Salud Universidad</div>`)[0];
+            popup_debf97d33a4948b78abde32574b6c6cb.setContent(html_09984c231d0d45498c26183838e0be61);
+        
+
+        marker_ce388713f7d44bfbbd345871afa8e87e.bindPopup(popup_debf97d33a4948b78abde32574b6c6cb)
+        ;
+
+        
+    
+    
+            var marker_ba1f86fe208e48c2a0dc50bbe0f677b7 = L.marker(
+                [40.4682307, -3.685317],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_0d47760d552848ce91186c5e249f6a1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba1f86fe208e48c2a0dc50bbe0f677b7.setIcon(icon_0d47760d552848ce91186c5e249f6a1c);
+        
+    
+        var popup_5cf09e44b95442a8af512cc5e1d44334 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_857da2af74f0411099053b2bf9c4e86f = $(`<div id="html_857da2af74f0411099053b2bf9c4e86f" style="width: 100.0%; height: 100.0%;">Centro de Salud Núñez Morgado</div>`)[0];
+            popup_5cf09e44b95442a8af512cc5e1d44334.setContent(html_857da2af74f0411099053b2bf9c4e86f);
+        
+
+        marker_ba1f86fe208e48c2a0dc50bbe0f677b7.bindPopup(popup_5cf09e44b95442a8af512cc5e1d44334)
+        ;
+
+        
+    
+    
+            var marker_04016d36eaa347338adfe2050679d6c5 = L.marker(
+                [40.4786143, -3.709417],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c1bf642ac15e4b859dc9aef2f8f2de9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04016d36eaa347338adfe2050679d6c5.setIcon(icon_c1bf642ac15e4b859dc9aef2f8f2de9c);
+        
+    
+        var popup_48b6d2b0d7074d48af7cb2a61dc71353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec39beb2aea240ff980c122a9a8bed0f = $(`<div id="html_ec39beb2aea240ff980c122a9a8bed0f" style="width: 100.0%; height: 100.0%;">Centro Madrid Salud Fuencarral</div>`)[0];
+            popup_48b6d2b0d7074d48af7cb2a61dc71353.setContent(html_ec39beb2aea240ff980c122a9a8bed0f);
+        
+
+        marker_04016d36eaa347338adfe2050679d6c5.bindPopup(popup_48b6d2b0d7074d48af7cb2a61dc71353)
+        ;
+
+        
+    
+    
+            var marker_771250a0c9e046ecbae2e80e89c0ac9b = L.marker(
+                [40.464309, -3.6952839],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_d357dce382a445a0ae4df87c2ac6baff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_771250a0c9e046ecbae2e80e89c0ac9b.setIcon(icon_d357dce382a445a0ae4df87c2ac6baff);
+        
+    
+        var popup_45c5a8607d734e0bb5a9c33305418523 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35ffb8bec6c4474784ad21f1bbc6cf2f = $(`<div id="html_35ffb8bec6c4474784ad21f1bbc6cf2f" style="width: 100.0%; height: 100.0%;">Clínica de los podólogos</div>`)[0];
+            popup_45c5a8607d734e0bb5a9c33305418523.setContent(html_35ffb8bec6c4474784ad21f1bbc6cf2f);
+        
+
+        marker_771250a0c9e046ecbae2e80e89c0ac9b.bindPopup(popup_45c5a8607d734e0bb5a9c33305418523)
+        ;
+
+        
+    
+    
+            var marker_dae357290ecd43e6ad69a72baab2c4bf = L.marker(
+                [40.4119611, -3.6937885],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e169c0204bdd47d9ae9133340ac7ffb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dae357290ecd43e6ad69a72baab2c4bf.setIcon(icon_e169c0204bdd47d9ae9133340ac7ffb0);
+        
+    
+        var popup_2bac41a3cd5749f08e77ceec9807dd9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3efd70d137da440e9c648ce044d5798f = $(`<div id="html_3efd70d137da440e9c648ce044d5798f" style="width: 100.0%; height: 100.0%;">Centro de Salud Alameda</div>`)[0];
+            popup_2bac41a3cd5749f08e77ceec9807dd9f.setContent(html_3efd70d137da440e9c648ce044d5798f);
+        
+
+        marker_dae357290ecd43e6ad69a72baab2c4bf.bindPopup(popup_2bac41a3cd5749f08e77ceec9807dd9f)
+        ;
+
+        
+    
+    
+            var marker_bcf9bb93b36140e6a04e82d6d3d90175 = L.marker(
+                [40.4424848, -3.6631059],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_129f08e92d0d41d09e58708a5e7d0e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcf9bb93b36140e6a04e82d6d3d90175.setIcon(icon_129f08e92d0d41d09e58708a5e7d0e52);
+        
+    
+        var popup_d3c34eef45bc4cfd8e66095651a520c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_552f1e348d874ffb89e19967863db32e = $(`<div id="html_552f1e348d874ffb89e19967863db32e" style="width: 100.0%; height: 100.0%;">Centro de Salud Baviera</div>`)[0];
+            popup_d3c34eef45bc4cfd8e66095651a520c0.setContent(html_552f1e348d874ffb89e19967863db32e);
+        
+
+        marker_bcf9bb93b36140e6a04e82d6d3d90175.bindPopup(popup_d3c34eef45bc4cfd8e66095651a520c0)
+        ;
+
+        
+    
+    
+            var marker_57db6e52094d4e4da888909a656e2b52 = L.marker(
+                [40.4042944, -3.6951567],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_8c1884839af844e0bfe3ad4658d91568 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57db6e52094d4e4da888909a656e2b52.setIcon(icon_8c1884839af844e0bfe3ad4658d91568);
+        
+    
+        var popup_d42bc3e27b7b462a8cb14c7aedb225ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c333dd69dfd94553ab5eb85a0b325b66 = $(`<div id="html_c333dd69dfd94553ab5eb85a0b325b66" style="width: 100.0%; height: 100.0%;">Centro de Salud Delicias</div>`)[0];
+            popup_d42bc3e27b7b462a8cb14c7aedb225ba.setContent(html_c333dd69dfd94553ab5eb85a0b325b66);
+        
+
+        marker_57db6e52094d4e4da888909a656e2b52.bindPopup(popup_d42bc3e27b7b462a8cb14c7aedb225ba)
+        ;
+
+        
+    
+    
+            var marker_79064315cbb6491a97b0f4f9a4a2e3fd = L.marker(
+                [40.4570811, -3.6794443],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_67978cecf117435f90051137ad7eb5f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79064315cbb6491a97b0f4f9a4a2e3fd.setIcon(icon_67978cecf117435f90051137ad7eb5f6);
+        
+    
+        var popup_8f9b3e39380647658d89531061cc1246 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_621e1065ada24bbb87747e86c10a7833 = $(`<div id="html_621e1065ada24bbb87747e86c10a7833" style="width: 100.0%; height: 100.0%;">Centro de Salud Potosí</div>`)[0];
+            popup_8f9b3e39380647658d89531061cc1246.setContent(html_621e1065ada24bbb87747e86c10a7833);
+        
+
+        marker_79064315cbb6491a97b0f4f9a4a2e3fd.bindPopup(popup_8f9b3e39380647658d89531061cc1246)
+        ;
+
+        
+    
+    
+            var marker_a367809ae25845b695b9c64a517783ec = L.marker(
+                [40.4400853, -3.6791289],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_67680e2280f841d58f6aa230623057ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a367809ae25845b695b9c64a517783ec.setIcon(icon_67680e2280f841d58f6aa230623057ea);
+        
+    
+        var popup_15cfa1d842174b818f5104cb64c22be3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77bf5ab97a7f4c7d82fc4eecc2eb0386 = $(`<div id="html_77bf5ab97a7f4c7d82fc4eecc2eb0386" style="width: 100.0%; height: 100.0%;">Centro de Salud Príncipe de Vergara</div>`)[0];
+            popup_15cfa1d842174b818f5104cb64c22be3.setContent(html_77bf5ab97a7f4c7d82fc4eecc2eb0386);
+        
+
+        marker_a367809ae25845b695b9c64a517783ec.bindPopup(popup_15cfa1d842174b818f5104cb64c22be3)
+        ;
+
+        
+    
+    
+            var marker_5e0aa15503884eb88077630e71ddb482 = L.marker(
+                [40.4285766, -3.6813351],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_3ea87dc7b60740f09ab3c5271d3d4aa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e0aa15503884eb88077630e71ddb482.setIcon(icon_3ea87dc7b60740f09ab3c5271d3d4aa8);
+        
+    
+        var popup_577007f05e15482daff20fc1fc6abdf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a66bc8cc56246f1a27c2a67811076b1 = $(`<div id="html_3a66bc8cc56246f1a27c2a67811076b1" style="width: 100.0%; height: 100.0%;">Centro de Salud Castelló</div>`)[0];
+            popup_577007f05e15482daff20fc1fc6abdf1.setContent(html_3a66bc8cc56246f1a27c2a67811076b1);
+        
+
+        marker_5e0aa15503884eb88077630e71ddb482.bindPopup(popup_577007f05e15482daff20fc1fc6abdf1)
+        ;
+
+        
+    
+    
+            var marker_259571839eab4762990f40ce7b9d6e85 = L.marker(
+                [40.4389029, -3.7071603],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ed526994c10348e0861257a0be788885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_259571839eab4762990f40ce7b9d6e85.setIcon(icon_ed526994c10348e0861257a0be788885);
+        
+    
+        var popup_a88f941f06d5444b91855466fc1f0a79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72ef1ec1d40445e08c737badb5b1c011 = $(`<div id="html_72ef1ec1d40445e08c737badb5b1c011" style="width: 100.0%; height: 100.0%;">Centro de Salud Cea Bermúdez</div>`)[0];
+            popup_a88f941f06d5444b91855466fc1f0a79.setContent(html_72ef1ec1d40445e08c737badb5b1c011);
+        
+
+        marker_259571839eab4762990f40ce7b9d6e85.bindPopup(popup_a88f941f06d5444b91855466fc1f0a79)
+        ;
+
+        
+    
+    
+            var marker_a891bc0ec46544c0984c6620687f49e7 = L.marker(
+                [40.4185018, -3.6779675],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_69bb8337abcf42aa86bf0d5632aa0a1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a891bc0ec46544c0984c6620687f49e7.setIcon(icon_69bb8337abcf42aa86bf0d5632aa0a1a);
+        
+    
+        var popup_e7ceab4df7684b7f897d40c2c415b68a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94a12d2eb75c483ea2ec8a7c20f09145 = $(`<div id="html_94a12d2eb75c483ea2ec8a7c20f09145" style="width: 100.0%; height: 100.0%;">Centro de Salud Ibiza</div>`)[0];
+            popup_e7ceab4df7684b7f897d40c2c415b68a.setContent(html_94a12d2eb75c483ea2ec8a7c20f09145);
+        
+
+        marker_a891bc0ec46544c0984c6620687f49e7.bindPopup(popup_e7ceab4df7684b7f897d40c2c415b68a)
+        ;
+
+        
+    
+    
+            var marker_51312216f59e4c0aabab703733b35905 = L.marker(
+                [40.4318699, -3.6658551],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_afcfe12c1ef24ed28fff702990d3d55c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51312216f59e4c0aabab703733b35905.setIcon(icon_afcfe12c1ef24ed28fff702990d3d55c);
+        
+    
+        var popup_c37d1e1db5c241fcb58484884f3244b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c7171a2a6ac4a12911b227ea5dcbba4 = $(`<div id="html_1c7171a2a6ac4a12911b227ea5dcbba4" style="width: 100.0%; height: 100.0%;">Centro de Salud Londres</div>`)[0];
+            popup_c37d1e1db5c241fcb58484884f3244b1.setContent(html_1c7171a2a6ac4a12911b227ea5dcbba4);
+        
+
+        marker_51312216f59e4c0aabab703733b35905.bindPopup(popup_c37d1e1db5c241fcb58484884f3244b1)
+        ;
+
+        
+    
+    
+            var marker_c531e9573e5c4576b30816735cf3c46f = L.marker(
+                [40.4306159, -3.6720154],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_1d75c712182a40619f7ec8e5aca822a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c531e9573e5c4576b30816735cf3c46f.setIcon(icon_1d75c712182a40619f7ec8e5aca822a2);
+        
+    
+        var popup_87b202375d304b0db4520648e0abb26b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e242ced244f34df1a87380b4be2eb41e = $(`<div id="html_e242ced244f34df1a87380b4be2eb41e" style="width: 100.0%; height: 100.0%;">Centro de Salud Montesa</div>`)[0];
+            popup_87b202375d304b0db4520648e0abb26b.setContent(html_e242ced244f34df1a87380b4be2eb41e);
+        
+
+        marker_c531e9573e5c4576b30816735cf3c46f.bindPopup(popup_87b202375d304b0db4520648e0abb26b)
+        ;
+
+        
+    
+    
+            var marker_38bfbc5664cf48d88b1c070211bd226a = L.marker(
+                [40.4355626, -3.6842767],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a179fb7f5b3e4419abe883d7f6f564ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38bfbc5664cf48d88b1c070211bd226a.setIcon(icon_a179fb7f5b3e4419abe883d7f6f564ea);
+        
+    
+        var popup_1b66391c4f624a0195d7c2dc91d2fdc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_886cb4990bd54047bdecacf0c67c364b = $(`<div id="html_886cb4990bd54047bdecacf0c67c364b" style="width: 100.0%; height: 100.0%;">Centro de Salud Lagasca</div>`)[0];
+            popup_1b66391c4f624a0195d7c2dc91d2fdc1.setContent(html_886cb4990bd54047bdecacf0c67c364b);
+        
+
+        marker_38bfbc5664cf48d88b1c070211bd226a.bindPopup(popup_1b66391c4f624a0195d7c2dc91d2fdc1)
+        ;
+
+        
+    
+    
+            var marker_e4d9e4b39eab4ad7b0feb509a993f4f7 = L.marker(
+                [40.4635006, -3.680129],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_569d027472e242218093e5727cdea9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4d9e4b39eab4ad7b0feb509a993f4f7.setIcon(icon_569d027472e242218093e5727cdea9e1);
+        
+    
+        var popup_29ed3e7fdd7742f1a860002742cbcdd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_215ec7e8218a487d89453d24d11710fd = $(`<div id="html_215ec7e8218a487d89453d24d11710fd" style="width: 100.0%; height: 100.0%;">Instituto de Investigaciones del Sueño</div>`)[0];
+            popup_29ed3e7fdd7742f1a860002742cbcdd8.setContent(html_215ec7e8218a487d89453d24d11710fd);
+        
+
+        marker_e4d9e4b39eab4ad7b0feb509a993f4f7.bindPopup(popup_29ed3e7fdd7742f1a860002742cbcdd8)
+        ;
+
+        
+    
+    
+            var marker_1be2c345c4f8451ead40ecd95d98607d = L.marker(
+                [40.4452425, -3.669899],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a122262d4e4f4399a2ebaf17607cadf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1be2c345c4f8451ead40ecd95d98607d.setIcon(icon_a122262d4e4f4399a2ebaf17607cadf4);
+        
+    
+        var popup_86603d005b814181beee159217385c8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_001421115b0441808f393d26db2f59a4 = $(`<div id="html_001421115b0441808f393d26db2f59a4" style="width: 100.0%; height: 100.0%;">Centro de Salud Santa Hortensia</div>`)[0];
+            popup_86603d005b814181beee159217385c8c.setContent(html_001421115b0441808f393d26db2f59a4);
+        
+
+        marker_1be2c345c4f8451ead40ecd95d98607d.bindPopup(popup_86603d005b814181beee159217385c8c)
+        ;
+
+        
+    
+    
+            var marker_3c5a7d1cd4fe4384aa12028ef5dc075b = L.marker(
+                [40.403136, -3.7019971],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_941f089d46774a2882743025d9544185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c5a7d1cd4fe4384aa12028ef5dc075b.setIcon(icon_941f089d46774a2882743025d9544185);
+        
+    
+        var popup_e035dd71544c4993a25e188dc3633f0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_448dd54287cd433caa19f847466892f5 = $(`<div id="html_448dd54287cd433caa19f847466892f5" style="width: 100.0%; height: 100.0%;">Centro de Salud Martín de Vargas</div>`)[0];
+            popup_e035dd71544c4993a25e188dc3633f0d.setContent(html_448dd54287cd433caa19f847466892f5);
+        
+
+        marker_3c5a7d1cd4fe4384aa12028ef5dc075b.bindPopup(popup_e035dd71544c4993a25e188dc3633f0d)
+        ;
+
+        
+    
+    
+            var marker_f60131ac686d404f8912aa05186c6964 = L.marker(
+                [40.4124121, -3.6969161],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ad07ec2e40ba4d2388d1e3385dc6a255 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f60131ac686d404f8912aa05186c6964.setIcon(icon_ad07ec2e40ba4d2388d1e3385dc6a255);
+        
+    
+        var popup_0739b54a5a27404dae6d3177d7c58db7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c1212e5d97441c1b3f307283a0144cd = $(`<div id="html_2c1212e5d97441c1b3f307283a0144cd" style="width: 100.0%; height: 100.0%;">Podólogo</div>`)[0];
+            popup_0739b54a5a27404dae6d3177d7c58db7.setContent(html_2c1212e5d97441c1b3f307283a0144cd);
+        
+
+        marker_f60131ac686d404f8912aa05186c6964.bindPopup(popup_0739b54a5a27404dae6d3177d7c58db7)
+        ;
+
+        
+    
+    
+            var marker_12b3f6b7450d40a8bb78ca47836737c9 = L.marker(
+                [40.4418027, -3.705018],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_87b068b1f35947768fa39bc8c598c7e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12b3f6b7450d40a8bb78ca47836737c9.setIcon(icon_87b068b1f35947768fa39bc8c598c7e4);
+        
+    
+        var popup_0159340409fe45a9926ac00a8d15cf6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26f60cfe9ca0455fa15b9c850851463f = $(`<div id="html_26f60cfe9ca0455fa15b9c850851463f" style="width: 100.0%; height: 100.0%;">Fuexpert Clinic</div>`)[0];
+            popup_0159340409fe45a9926ac00a8d15cf6b.setContent(html_26f60cfe9ca0455fa15b9c850851463f);
+        
+
+        marker_12b3f6b7450d40a8bb78ca47836737c9.bindPopup(popup_0159340409fe45a9926ac00a8d15cf6b)
+        ;
+
+        
+    
+    
+            var marker_26980f2060bf4ae1b38f8e3acdeedce6 = L.marker(
+                [40.4392594, -3.7063926],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_8b1ca88f781c4315af369ec84898e5fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26980f2060bf4ae1b38f8e3acdeedce6.setIcon(icon_8b1ca88f781c4315af369ec84898e5fa);
+        
+    
+        var popup_f69b4d42cf6c42b98e00ce86f2374fa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fa1e3df41e449c99228e08bb10b7087 = $(`<div id="html_2fa1e3df41e449c99228e08bb10b7087" style="width: 100.0%; height: 100.0%;">Kinect</div>`)[0];
+            popup_f69b4d42cf6c42b98e00ce86f2374fa9.setContent(html_2fa1e3df41e449c99228e08bb10b7087);
+        
+
+        marker_26980f2060bf4ae1b38f8e3acdeedce6.bindPopup(popup_f69b4d42cf6c42b98e00ce86f2374fa9)
+        ;
+
+        
+    
+    
+            var marker_3af2cb12b4aa4290976044274c4a6a0b = L.marker(
+                [40.4326037, -3.7076807],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e9ec4f77102b44309a688ade7ff3f5a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3af2cb12b4aa4290976044274c4a6a0b.setIcon(icon_e9ec4f77102b44309a688ade7ff3f5a8);
+        
+    
+        var popup_af3390fdf51143e8902cacdb113e344a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93c13082df9f47dbb7fe479bfb2ebd01 = $(`<div id="html_93c13082df9f47dbb7fe479bfb2ebd01" style="width: 100.0%; height: 100.0%;">Blue Moon</div>`)[0];
+            popup_af3390fdf51143e8902cacdb113e344a.setContent(html_93c13082df9f47dbb7fe479bfb2ebd01);
+        
+
+        marker_3af2cb12b4aa4290976044274c4a6a0b.bindPopup(popup_af3390fdf51143e8902cacdb113e344a)
+        ;
+
+        
+    
+    
+            var marker_b1fc5c7e0d954126b1fea8e64e6d76b5 = L.marker(
+                [40.433192, -3.6997609],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_cbaafb663bab4cc78e3c3ac6d5fc2761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1fc5c7e0d954126b1fea8e64e6d76b5.setIcon(icon_cbaafb663bab4cc78e3c3ac6d5fc2761);
+        
+    
+        var popup_b5137bc7f7a64cdda8c0fa2fc0b298fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3b57fb2c3874402bfb0f73a966855a8 = $(`<div id="html_e3b57fb2c3874402bfb0f73a966855a8" style="width: 100.0%; height: 100.0%;">Podoactiva</div>`)[0];
+            popup_b5137bc7f7a64cdda8c0fa2fc0b298fd.setContent(html_e3b57fb2c3874402bfb0f73a966855a8);
+        
+
+        marker_b1fc5c7e0d954126b1fea8e64e6d76b5.bindPopup(popup_b5137bc7f7a64cdda8c0fa2fc0b298fd)
+        ;
+
+        
+    
+    
+            var marker_0ae8aab7758b40c9a36d37d8ef7696c9 = L.marker(
+                [40.4282594, -3.7012787],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_8c1017db0b3246c0b1da6abac10d64b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ae8aab7758b40c9a36d37d8ef7696c9.setIcon(icon_8c1017db0b3246c0b1da6abac10d64b5);
+        
+    
+        var popup_6f2ffd3dfa654e37a73d8663e5ecf941 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_116d44c44ab144a296b7990792a4fe6c = $(`<div id="html_116d44c44ab144a296b7990792a4fe6c" style="width: 100.0%; height: 100.0%;">Ana Ramos</div>`)[0];
+            popup_6f2ffd3dfa654e37a73d8663e5ecf941.setContent(html_116d44c44ab144a296b7990792a4fe6c);
+        
+
+        marker_0ae8aab7758b40c9a36d37d8ef7696c9.bindPopup(popup_6f2ffd3dfa654e37a73d8663e5ecf941)
+        ;
+
+        
+    
+    
+            var marker_02aedb00d4b54034bf049b51defa72bd = L.marker(
+                [40.4473201, -3.7034089],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_5da15f4dc77744578deef5b72a25297c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02aedb00d4b54034bf049b51defa72bd.setIcon(icon_5da15f4dc77744578deef5b72a25297c);
+        
+    
+        var popup_eb1da63c6b6a42a18a15e1629cb6acba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe8c355d263145919dd2d9b7e822a4c5 = $(`<div id="html_fe8c355d263145919dd2d9b7e822a4c5" style="width: 100.0%; height: 100.0%;">CQS</div>`)[0];
+            popup_eb1da63c6b6a42a18a15e1629cb6acba.setContent(html_fe8c355d263145919dd2d9b7e822a4c5);
+        
+
+        marker_02aedb00d4b54034bf049b51defa72bd.bindPopup(popup_eb1da63c6b6a42a18a15e1629cb6acba)
+        ;
+
+        
+    
+    
+            var marker_bca3d2a7e33143659f657e96cfc5db04 = L.marker(
+                [40.4923922, -3.6526303],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ab09c8330a0f402ebc2765e3a9ee8724 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bca3d2a7e33143659f657e96cfc5db04.setIcon(icon_ab09c8330a0f402ebc2765e3a9ee8724);
+        
+    
+        var popup_b60bf8d4a892477cbe7f08e8555cc93e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e2f8b56f0e04d70ab23cb8d42a68a3b = $(`<div id="html_0e2f8b56f0e04d70ab23cb8d42a68a3b" style="width: 100.0%; height: 100.0%;">Centro Médico Estético Sanchinarro</div>`)[0];
+            popup_b60bf8d4a892477cbe7f08e8555cc93e.setContent(html_0e2f8b56f0e04d70ab23cb8d42a68a3b);
+        
+
+        marker_bca3d2a7e33143659f657e96cfc5db04.bindPopup(popup_b60bf8d4a892477cbe7f08e8555cc93e)
+        ;
+
+        
+    
+    
+            var marker_696595b572314143b15ef22317e93d0b = L.marker(
+                [40.5042247, -3.6736494],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_df4818a123e34795b94b84e3f321cd5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_696595b572314143b15ef22317e93d0b.setIcon(icon_df4818a123e34795b94b84e3f321cd5b);
+        
+    
+        var popup_b614ce20dcdd43c1a7ece488fcd0f7c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e5a59ede1104a46af248116b157d7cf = $(`<div id="html_6e5a59ede1104a46af248116b157d7cf" style="width: 100.0%; height: 100.0%;">Clínica Vaos</div>`)[0];
+            popup_b614ce20dcdd43c1a7ece488fcd0f7c8.setContent(html_6e5a59ede1104a46af248116b157d7cf);
+        
+
+        marker_696595b572314143b15ef22317e93d0b.bindPopup(popup_b614ce20dcdd43c1a7ece488fcd0f7c8)
+        ;
+
+        
+    
+    
+            var marker_49f6ceab55aa43ce98aba853de50eb40 = L.marker(
+                [40.5003976, -3.6728454],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7fa5c3930ee540239880141d246271a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_49f6ceab55aa43ce98aba853de50eb40.setIcon(icon_7fa5c3930ee540239880141d246271a9);
+        
+    
+        var popup_027086faf7684d9abc9ee051b7e09113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9b476c7b0c4525a020965bb3d55cda = $(`<div id="html_6c9b476c7b0c4525a020965bb3d55cda" style="width: 100.0%; height: 100.0%;">Policlínico HM Las Tablas</div>`)[0];
+            popup_027086faf7684d9abc9ee051b7e09113.setContent(html_6c9b476c7b0c4525a020965bb3d55cda);
+        
+
+        marker_49f6ceab55aa43ce98aba853de50eb40.bindPopup(popup_027086faf7684d9abc9ee051b7e09113)
+        ;
+
+        
+    
+    
+            var marker_3365a83fd73444a5891a0150e8f17f8b = L.marker(
+                [40.422014, -3.6798717],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_249e8d12100b4bd0af7ab0f7e18c3e9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3365a83fd73444a5891a0150e8f17f8b.setIcon(icon_249e8d12100b4bd0af7ab0f7e18c3e9c);
+        
+    
+        var popup_b7b6c46d4bc8472783eac398182b7742 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397fd09351ec48f588c72e30e3f0c2bd = $(`<div id="html_397fd09351ec48f588c72e30e3f0c2bd" style="width: 100.0%; height: 100.0%;">Aver</div>`)[0];
+            popup_b7b6c46d4bc8472783eac398182b7742.setContent(html_397fd09351ec48f588c72e30e3f0c2bd);
+        
+
+        marker_3365a83fd73444a5891a0150e8f17f8b.bindPopup(popup_b7b6c46d4bc8472783eac398182b7742)
+        ;
+
+        
+    
+    
+            var marker_11d35183d6104ed682bb0de80d34cb53 = L.marker(
+                [40.4083859, -3.6889436],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_9eeb5ba0d6ba4fd09acb6becb74ba6f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11d35183d6104ed682bb0de80d34cb53.setIcon(icon_9eeb5ba0d6ba4fd09acb6becb74ba6f5);
+        
+    
+        var popup_64cfec456157467fae7ec13e6198e6a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_158add64d5ee4407888c097fc9712acd = $(`<div id="html_158add64d5ee4407888c097fc9712acd" style="width: 100.0%; height: 100.0%;">Clínica Eugin Madrid</div>`)[0];
+            popup_64cfec456157467fae7ec13e6198e6a3.setContent(html_158add64d5ee4407888c097fc9712acd);
+        
+
+        marker_11d35183d6104ed682bb0de80d34cb53.bindPopup(popup_64cfec456157467fae7ec13e6198e6a3)
+        ;
+
+        
+    
+    
+            var marker_25fe7bc08eaf4e87b3551652fcd77b80 = L.marker(
+                [40.467125, -3.6141037],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_1abf552fc5464ae488fca67e6e794adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25fe7bc08eaf4e87b3551652fcd77b80.setIcon(icon_1abf552fc5464ae488fca67e6e794adf);
+        
+    
+        var popup_34e754fbd1a34a629191a24ded1da418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dbaabbcdf524a4d825de9ca2c785279 = $(`<div id="html_5dbaabbcdf524a4d825de9ca2c785279" style="width: 100.0%; height: 100.0%;">Servicio Médico</div>`)[0];
+            popup_34e754fbd1a34a629191a24ded1da418.setContent(html_5dbaabbcdf524a4d825de9ca2c785279);
+        
+
+        marker_25fe7bc08eaf4e87b3551652fcd77b80.bindPopup(popup_34e754fbd1a34a629191a24ded1da418)
+        ;
+
+        
+    
+    
+            var marker_945c34ce41764375b6ed22688324c8aa = L.marker(
+                [40.4693178, -3.6177653],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_bcc64d1a56f3447e92f3ffbd1c8a1114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_945c34ce41764375b6ed22688324c8aa.setIcon(icon_bcc64d1a56f3447e92f3ffbd1c8a1114);
+        
+    
+        var popup_470f503f6f73491eb3622bc58ba87c01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_205d2f1140b142b987867ad92cd65fa1 = $(`<div id="html_205d2f1140b142b987867ad92cd65fa1" style="width: 100.0%; height: 100.0%;">Servicio Médico</div>`)[0];
+            popup_470f503f6f73491eb3622bc58ba87c01.setContent(html_205d2f1140b142b987867ad92cd65fa1);
+        
+
+        marker_945c34ce41764375b6ed22688324c8aa.bindPopup(popup_470f503f6f73491eb3622bc58ba87c01)
+        ;
+
+        
+    
+    
+            var marker_794a1203bef543859ae5510724650e61 = L.marker(
+                [40.420659, -3.7014952],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_d231a6bc85264f00aba75df9d09e3661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_794a1203bef543859ae5510724650e61.setIcon(icon_d231a6bc85264f00aba75df9d09e3661);
+        
+    
+        var popup_8c9afb7cc3874c7182a3d0bdde21aac0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea5070d6b3594e8db74fd6b732415833 = $(`<div id="html_ea5070d6b3594e8db74fd6b732415833" style="width: 100.0%; height: 100.0%;">Instituto Gabriel Simón</div>`)[0];
+            popup_8c9afb7cc3874c7182a3d0bdde21aac0.setContent(html_ea5070d6b3594e8db74fd6b732415833);
+        
+
+        marker_794a1203bef543859ae5510724650e61.bindPopup(popup_8c9afb7cc3874c7182a3d0bdde21aac0)
+        ;
+
+        
+    
+    
+            var marker_aa33c9e2f3c6477d8ab6655910aafbb0 = L.marker(
+                [40.4325217, -3.7049464],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_744c177dbef84f4f99428d75f84ba3c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa33c9e2f3c6477d8ab6655910aafbb0.setIcon(icon_744c177dbef84f4f99428d75f84ba3c3);
+        
+    
+        var popup_a5e9ac47d9db4c0dbe8d0e04cf0b78e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_639f5d45e9464fa7b19e81b7000883b9 = $(`<div id="html_639f5d45e9464fa7b19e81b7000883b9" style="width: 100.0%; height: 100.0%;">Clínica Zurich</div>`)[0];
+            popup_a5e9ac47d9db4c0dbe8d0e04cf0b78e1.setContent(html_639f5d45e9464fa7b19e81b7000883b9);
+        
+
+        marker_aa33c9e2f3c6477d8ab6655910aafbb0.bindPopup(popup_a5e9ac47d9db4c0dbe8d0e04cf0b78e1)
+        ;
+
+        
+    
+    
+            var marker_dee7d4d02118448b99ce07809a9cca22 = L.marker(
+                [40.4296142, -3.7049721],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_45552b7dd1d648b98194b1a554cebb5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dee7d4d02118448b99ce07809a9cca22.setIcon(icon_45552b7dd1d648b98194b1a554cebb5f);
+        
+    
+        var popup_b672542175d34e50b6802dcc6dccece1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcdedacf78da47dc9b0ed1ba2c00605e = $(`<div id="html_fcdedacf78da47dc9b0ed1ba2c00605e" style="width: 100.0%; height: 100.0%;">Ossium Center</div>`)[0];
+            popup_b672542175d34e50b6802dcc6dccece1.setContent(html_fcdedacf78da47dc9b0ed1ba2c00605e);
+        
+
+        marker_dee7d4d02118448b99ce07809a9cca22.bindPopup(popup_b672542175d34e50b6802dcc6dccece1)
+        ;
+
+        
+    
+    
+            var marker_774902afd8604e4a9dfbabefc972ac3f = L.marker(
+                [40.4293682, -3.7035357],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7d4856679cdd43caba13f64147059521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_774902afd8604e4a9dfbabefc972ac3f.setIcon(icon_7d4856679cdd43caba13f64147059521);
+        
+    
+        var popup_e8f460c669ee4e70a85b91e5891fba34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7bd6937f2c74e9b87fcbf646a71d635 = $(`<div id="html_c7bd6937f2c74e9b87fcbf646a71d635" style="width: 100.0%; height: 100.0%;">Clínica Croquer</div>`)[0];
+            popup_e8f460c669ee4e70a85b91e5891fba34.setContent(html_c7bd6937f2c74e9b87fcbf646a71d635);
+        
+
+        marker_774902afd8604e4a9dfbabefc972ac3f.bindPopup(popup_e8f460c669ee4e70a85b91e5891fba34)
+        ;
+
+        
+    
+    
+            var marker_083bf0e704a6409b9d963e4a3883a803 = L.marker(
+                [40.4371184, -3.6930873],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_35b868a2fab449dc8162695b2b94a3bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_083bf0e704a6409b9d963e4a3883a803.setIcon(icon_35b868a2fab449dc8162695b2b94a3bb);
+        
+    
+        var popup_4420048e39514931bbd0339b1208d07b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33c9773dc654435f84ba68b69220a136 = $(`<div id="html_33c9773dc654435f84ba68b69220a136" style="width: 100.0%; height: 100.0%;">Centro internacional de oftalmología avanzada</div>`)[0];
+            popup_4420048e39514931bbd0339b1208d07b.setContent(html_33c9773dc654435f84ba68b69220a136);
+        
+
+        marker_083bf0e704a6409b9d963e4a3883a803.bindPopup(popup_4420048e39514931bbd0339b1208d07b)
+        ;
+
+        
+    
+    
+            var marker_745717ed67444e7a913a1b2e97efe672 = L.marker(
+                [40.4602324, -3.6855998],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7d960a3a5bb348e7864383f0b9704e1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_745717ed67444e7a913a1b2e97efe672.setIcon(icon_7d960a3a5bb348e7864383f0b9704e1b);
+        
+    
+        var popup_4439b11105864e78a6828db07c340c54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b10f66f185e242f18725badac3c78dc2 = $(`<div id="html_b10f66f185e242f18725badac3c78dc2" style="width: 100.0%; height: 100.0%;">Clínica de Diabetes</div>`)[0];
+            popup_4439b11105864e78a6828db07c340c54.setContent(html_b10f66f185e242f18725badac3c78dc2);
+        
+
+        marker_745717ed67444e7a913a1b2e97efe672.bindPopup(popup_4439b11105864e78a6828db07c340c54)
+        ;
+
+        
+    
+    
+            var marker_74ddabeccedf4fa1b3f29964316d7707 = L.marker(
+                [40.420426, -3.6973478],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_dab9254e511945c6b3e2693165c2b36d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74ddabeccedf4fa1b3f29964316d7707.setIcon(icon_dab9254e511945c6b3e2693165c2b36d);
+        
+    
+        var popup_ffd0fb0354fb49e0b459c9579deb74a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b605e6c4151496cace4fe146f3cc324 = $(`<div id="html_5b605e6c4151496cace4fe146f3cc324" style="width: 100.0%; height: 100.0%;">NO NAME</div>`)[0];
+            popup_ffd0fb0354fb49e0b459c9579deb74a9.setContent(html_5b605e6c4151496cace4fe146f3cc324);
+        
+
+        marker_74ddabeccedf4fa1b3f29964316d7707.bindPopup(popup_ffd0fb0354fb49e0b459c9579deb74a9)
+        ;
+
+        
+    
+    
+            var marker_f14d6f4764064f0ba8ee9d9aa1e03031 = L.marker(
+                [40.4821662, -3.6717706],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_bd4c744c20d74247a707d954ff26daf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f14d6f4764064f0ba8ee9d9aa1e03031.setIcon(icon_bd4c744c20d74247a707d954ff26daf0);
+        
+    
+        var popup_0923523bb19e4146be97a6ef46588fb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e46c213501554a6bb185105af541d7b3 = $(`<div id="html_e46c213501554a6bb185105af541d7b3" style="width: 100.0%; height: 100.0%;">Clínica Chamartin</div>`)[0];
+            popup_0923523bb19e4146be97a6ef46588fb0.setContent(html_e46c213501554a6bb185105af541d7b3);
+        
+
+        marker_f14d6f4764064f0ba8ee9d9aa1e03031.bindPopup(popup_0923523bb19e4146be97a6ef46588fb0)
+        ;
+
+        
+    
+    
+            var marker_13e6f82aa8fc4fa7a83680666deba3cd = L.marker(
+                [40.4559598, -3.6758832],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_2e15a88dd9c640eca4893feec12fd65c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13e6f82aa8fc4fa7a83680666deba3cd.setIcon(icon_2e15a88dd9c640eca4893feec12fd65c);
+        
+    
+        var popup_3fa35b79b8c7492aa536c407d0dd3533 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e309b6f96b5841a2a36984d17478a8a3 = $(`<div id="html_e309b6f96b5841a2a36984d17478a8a3" style="width: 100.0%; height: 100.0%;">The Beauty Concept</div>`)[0];
+            popup_3fa35b79b8c7492aa536c407d0dd3533.setContent(html_e309b6f96b5841a2a36984d17478a8a3);
+        
+
+        marker_13e6f82aa8fc4fa7a83680666deba3cd.bindPopup(popup_3fa35b79b8c7492aa536c407d0dd3533)
+        ;
+
+        
+    
+    
+            var marker_6d8adae189ed48e58551e4a2ea822e03 = L.marker(
+                [40.4440471, -3.6962407],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a99e313e265849b0ab978e7575db9076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d8adae189ed48e58551e4a2ea822e03.setIcon(icon_a99e313e265849b0ab978e7575db9076);
+        
+    
+        var popup_2531d13b8197498d9e31b9b4857d41c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06b32429b5224fe8a3a8f56e05edd8aa = $(`<div id="html_06b32429b5224fe8a3a8f56e05edd8aa" style="width: 100.0%; height: 100.0%;">Psiconueve</div>`)[0];
+            popup_2531d13b8197498d9e31b9b4857d41c8.setContent(html_06b32429b5224fe8a3a8f56e05edd8aa);
+        
+
+        marker_6d8adae189ed48e58551e4a2ea822e03.bindPopup(popup_2531d13b8197498d9e31b9b4857d41c8)
+        ;
+
+        
+    
+    
+            var marker_400e55b75ade49b7b5970e065bfa6ef2 = L.marker(
+                [40.408436, -3.677954],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_91f88cf5d0994f4bb8b3744ddfe5f7ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_400e55b75ade49b7b5970e065bfa6ef2.setIcon(icon_91f88cf5d0994f4bb8b3744ddfe5f7ba);
+        
+    
+        var popup_7cbd366ff3d6454bb74f4cd093bd6a1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_034c16c6c37f48fb89d1c6b6464b20a6 = $(`<div id="html_034c16c6c37f48fb89d1c6b6464b20a6" style="width: 100.0%; height: 100.0%;">Clínica Oftalmológica Martínez de la Casa Matilla</div>`)[0];
+            popup_7cbd366ff3d6454bb74f4cd093bd6a1e.setContent(html_034c16c6c37f48fb89d1c6b6464b20a6);
+        
+
+        marker_400e55b75ade49b7b5970e065bfa6ef2.bindPopup(popup_7cbd366ff3d6454bb74f4cd093bd6a1e)
+        ;
+
+        
+    
+    
+            var marker_447fa3bf72af4d81b8d88fd03815166b = L.marker(
+                [40.4376164, -3.6856058],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_78af6d3dca3941cfabf5ab0be5d713da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_447fa3bf72af4d81b8d88fd03815166b.setIcon(icon_78af6d3dca3941cfabf5ab0be5d713da);
+        
+    
+        var popup_bcc2f81ae09840bda20510f7eeb5566c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a38af81b6d0b4913a1124cb4f41f0583 = $(`<div id="html_a38af81b6d0b4913a1124cb4f41f0583" style="width: 100.0%; height: 100.0%;">Instituto de Urología</div>`)[0];
+            popup_bcc2f81ae09840bda20510f7eeb5566c.setContent(html_a38af81b6d0b4913a1124cb4f41f0583);
+        
+
+        marker_447fa3bf72af4d81b8d88fd03815166b.bindPopup(popup_bcc2f81ae09840bda20510f7eeb5566c)
+        ;
+
+        
+    
+    
+            var marker_531b6f48526a4357be95b5f4ac705f14 = L.marker(
+                [40.4594132, -3.6769735],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_faab0020d492426094cc6f21ed244c78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_531b6f48526a4357be95b5f4ac705f14.setIcon(icon_faab0020d492426094cc6f21ed244c78);
+        
+    
+        var popup_9a5a4e628e9e4f648fedf15dcd98c4a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1c5e56699094ea69c578f463821f6f6 = $(`<div id="html_e1c5e56699094ea69c578f463821f6f6" style="width: 100.0%; height: 100.0%;">NO NAME</div>`)[0];
+            popup_9a5a4e628e9e4f648fedf15dcd98c4a2.setContent(html_e1c5e56699094ea69c578f463821f6f6);
+        
+
+        marker_531b6f48526a4357be95b5f4ac705f14.bindPopup(popup_9a5a4e628e9e4f648fedf15dcd98c4a2)
+        ;
+
+        
+    
+    
+            var marker_28a9b710eb9642ac9cd08367966e0484 = L.marker(
+                [40.4334797, -3.7063989],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_efa703d3f7b54528a9e1eaa08c2c698b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28a9b710eb9642ac9cd08367966e0484.setIcon(icon_efa703d3f7b54528a9e1eaa08c2c698b);
+        
+    
+        var popup_4c0045860ab5411aa5e2e00086b5e3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82dd227761b442da85bd404f379ce507 = $(`<div id="html_82dd227761b442da85bd404f379ce507" style="width: 100.0%; height: 100.0%;">Policlínico HM Arapiles</div>`)[0];
+            popup_4c0045860ab5411aa5e2e00086b5e3b3.setContent(html_82dd227761b442da85bd404f379ce507);
+        
+
+        marker_28a9b710eb9642ac9cd08367966e0484.bindPopup(popup_4c0045860ab5411aa5e2e00086b5e3b3)
+        ;
+
+        
+    
+    
+            var marker_697dd249229e437aab4a3f4e58696dc9 = L.marker(
+                [40.4676313, -3.6788282],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_1d5f27ab19e845f38ff0b24bf18f2892 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_697dd249229e437aab4a3f4e58696dc9.setIcon(icon_1d5f27ab19e845f38ff0b24bf18f2892);
+        
+    
+        var popup_eff79466e9654048b03fa44d3f1bbe8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e283111b704e4da48731b43c08856c31 = $(`<div id="html_e283111b704e4da48731b43c08856c31" style="width: 100.0%; height: 100.0%;">Centro Oftalmológico</div>`)[0];
+            popup_eff79466e9654048b03fa44d3f1bbe8e.setContent(html_e283111b704e4da48731b43c08856c31);
+        
+
+        marker_697dd249229e437aab4a3f4e58696dc9.bindPopup(popup_eff79466e9654048b03fa44d3f1bbe8e)
+        ;
+
+        
+    
+    
+            var marker_e749b1426e62497f801f640fb3776034 = L.marker(
+                [40.4666838, -3.6867851],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b9320ee23c6b43dfaccfa984feb50a2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e749b1426e62497f801f640fb3776034.setIcon(icon_b9320ee23c6b43dfaccfa984feb50a2a);
+        
+    
+        var popup_ade4fe53481b4a90b305e5f3204b0f58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba989a7c22846c788fbe86565fa3bce = $(`<div id="html_6ba989a7c22846c788fbe86565fa3bce" style="width: 100.0%; height: 100.0%;">Fisiofix</div>`)[0];
+            popup_ade4fe53481b4a90b305e5f3204b0f58.setContent(html_6ba989a7c22846c788fbe86565fa3bce);
+        
+
+        marker_e749b1426e62497f801f640fb3776034.bindPopup(popup_ade4fe53481b4a90b305e5f3204b0f58)
+        ;
+
+        
+    
+    
+            var marker_f50eb5c57b7b43b287661b9eb105419c = L.marker(
+                [40.4679041, -3.6863228],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_5fff896a497c4393a62d84e6eb74e881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f50eb5c57b7b43b287661b9eb105419c.setIcon(icon_5fff896a497c4393a62d84e6eb74e881);
+        
+    
+        var popup_f8f5a2870df940da8a407f9eea2e5324 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b0dd9efd3414043bac9ccb1c6613c07 = $(`<div id="html_4b0dd9efd3414043bac9ccb1c6613c07" style="width: 100.0%; height: 100.0%;">Clínica Doctora Barba</div>`)[0];
+            popup_f8f5a2870df940da8a407f9eea2e5324.setContent(html_4b0dd9efd3414043bac9ccb1c6613c07);
+        
+
+        marker_f50eb5c57b7b43b287661b9eb105419c.bindPopup(popup_f8f5a2870df940da8a407f9eea2e5324)
+        ;
+
+        
+    
+    
+            var marker_507a264e40744a0988f29fd62f7b7000 = L.marker(
+                [40.4477892, -3.6665829],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_522df3dbb19c44ec9cd8e14f2ab9c8fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_507a264e40744a0988f29fd62f7b7000.setIcon(icon_522df3dbb19c44ec9cd8e14f2ab9c8fb);
+        
+    
+        var popup_146465a6fe0d4bce894cc3e1cf4b13ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_723ba7138765443d9cc7b1dce458b6a5 = $(`<div id="html_723ba7138765443d9cc7b1dce458b6a5" style="width: 100.0%; height: 100.0%;">Policlínica Ipacsa</div>`)[0];
+            popup_146465a6fe0d4bce894cc3e1cf4b13ba.setContent(html_723ba7138765443d9cc7b1dce458b6a5);
+        
+
+        marker_507a264e40744a0988f29fd62f7b7000.bindPopup(popup_146465a6fe0d4bce894cc3e1cf4b13ba)
+        ;
+
+        
+    
+    
+            var marker_2c87471245fa46139f8da537d6334c3e = L.marker(
+                [40.4485581, -3.6677507],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ff7978a08cc8466bb84457ce4f1e6003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c87471245fa46139f8da537d6334c3e.setIcon(icon_ff7978a08cc8466bb84457ce4f1e6003);
+        
+    
+        var popup_956a2effece14b3395984d34a4e10cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acf74987e10549d9878f789716a9d19f = $(`<div id="html_acf74987e10549d9878f789716a9d19f" style="width: 100.0%; height: 100.0%;">Ascires López de Hoyos</div>`)[0];
+            popup_956a2effece14b3395984d34a4e10cd4.setContent(html_acf74987e10549d9878f789716a9d19f);
+        
+
+        marker_2c87471245fa46139f8da537d6334c3e.bindPopup(popup_956a2effece14b3395984d34a4e10cd4)
+        ;
+
+        
+    
+    
+            var marker_7dd2c85ca80b4337a0ba45f376dadd1b = L.marker(
+                [40.4457618, -3.6710199],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7592143f81994aafa0b6dfaaa9f06a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7dd2c85ca80b4337a0ba45f376dadd1b.setIcon(icon_7592143f81994aafa0b6dfaaa9f06a3d);
+        
+    
+        var popup_da4e97ba7f324a5f90485ac239d1d691 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5ad02b2085a49a0aa0bc5aab3cfcc6a = $(`<div id="html_f5ad02b2085a49a0aa0bc5aab3cfcc6a" style="width: 100.0%; height: 100.0%;">Cellosa Madrid</div>`)[0];
+            popup_da4e97ba7f324a5f90485ac239d1d691.setContent(html_f5ad02b2085a49a0aa0bc5aab3cfcc6a);
+        
+
+        marker_7dd2c85ca80b4337a0ba45f376dadd1b.bindPopup(popup_da4e97ba7f324a5f90485ac239d1d691)
+        ;
+
+        
+    
+    
+            var marker_df175b2896f04ce48edc0ecc47547363 = L.marker(
+                [40.4279779, -3.6724512],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_8aa6851c479640348d93bf983b968103 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df175b2896f04ce48edc0ecc47547363.setIcon(icon_8aa6851c479640348d93bf983b968103);
+        
+    
+        var popup_d15c299276324bca92845df2dfcb650b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cc4847fdb8d4d20a1d2f3645bff33ee = $(`<div id="html_9cc4847fdb8d4d20a1d2f3645bff33ee" style="width: 100.0%; height: 100.0%;">Policlínica Meprysa</div>`)[0];
+            popup_d15c299276324bca92845df2dfcb650b.setContent(html_9cc4847fdb8d4d20a1d2f3645bff33ee);
+        
+
+        marker_df175b2896f04ce48edc0ecc47547363.bindPopup(popup_d15c299276324bca92845df2dfcb650b)
+        ;
+
+        
+    
+    
+            var marker_e793920b7b3647c1b17b619eac4cc6c2 = L.marker(
+                [40.4278048, -3.6824523],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_68a4018e5d0a466c87b7abdd632981f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e793920b7b3647c1b17b619eac4cc6c2.setIcon(icon_68a4018e5d0a466c87b7abdd632981f4);
+        
+    
+        var popup_32bb2b3b4dc84ddcbb55b71c699e7afa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ba05bd93f3c4b5c83900479373b824d = $(`<div id="html_3ba05bd93f3c4b5c83900479373b824d" style="width: 100.0%; height: 100.0%;">Centro médico Nuñez de Balboa</div>`)[0];
+            popup_32bb2b3b4dc84ddcbb55b71c699e7afa.setContent(html_3ba05bd93f3c4b5c83900479373b824d);
+        
+
+        marker_e793920b7b3647c1b17b619eac4cc6c2.bindPopup(popup_32bb2b3b4dc84ddcbb55b71c699e7afa)
+        ;
+
+        
+    
+    
+            var marker_34c000769c6a4cb89f0ba13b90232ab8 = L.marker(
+                [40.454781, -3.658831],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_637dce8030674bd19c78a62d58a6edb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34c000769c6a4cb89f0ba13b90232ab8.setIcon(icon_637dce8030674bd19c78a62d58a6edb2);
+        
+    
+        var popup_8d5a8d57613e40dc8230ffb4f9c8773f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9ba2bceddd04aa9a0a1636c4aee616f = $(`<div id="html_e9ba2bceddd04aa9a0a1636c4aee616f" style="width: 100.0%; height: 100.0%;">Clínica Ginefiv</div>`)[0];
+            popup_8d5a8d57613e40dc8230ffb4f9c8773f.setContent(html_e9ba2bceddd04aa9a0a1636c4aee616f);
+        
+
+        marker_34c000769c6a4cb89f0ba13b90232ab8.bindPopup(popup_8d5a8d57613e40dc8230ffb4f9c8773f)
+        ;
+
+        
+    
+    
+            var marker_b3714adbb8034898a61dd401d076c6c4 = L.marker(
+                [40.4753022, -3.7010971],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ee4818b350b64b358e4249208ad7a9f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3714adbb8034898a61dd401d076c6c4.setIcon(icon_ee4818b350b64b358e4249208ad7a9f6);
+        
+    
+        var popup_289fab89a7af40679f3eb4bbb0838056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6447a28767a24f1a978dbadbb3006de3 = $(`<div id="html_6447a28767a24f1a978dbadbb3006de3" style="width: 100.0%; height: 100.0%;">Clínica Estética Dorsia</div>`)[0];
+            popup_289fab89a7af40679f3eb4bbb0838056.setContent(html_6447a28767a24f1a978dbadbb3006de3);
+        
+
+        marker_b3714adbb8034898a61dd401d076c6c4.bindPopup(popup_289fab89a7af40679f3eb4bbb0838056)
+        ;
+
+        
+    
+    
+            var marker_313755971c824c30921c69c320ff76c0 = L.marker(
+                [40.4332822, -3.6832523],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_5956cfb6675149e19c17bc8d23b674aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_313755971c824c30921c69c320ff76c0.setIcon(icon_5956cfb6675149e19c17bc8d23b674aa);
+        
+    
+        var popup_373450dff374421c8722dd184e4b65a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d133d94884bd4754ac8ea49d0c233949 = $(`<div id="html_d133d94884bd4754ac8ea49d0c233949" style="width: 100.0%; height: 100.0%;">Clínica Estética Dorsia</div>`)[0];
+            popup_373450dff374421c8722dd184e4b65a0.setContent(html_d133d94884bd4754ac8ea49d0c233949);
+        
+
+        marker_313755971c824c30921c69c320ff76c0.bindPopup(popup_373450dff374421c8722dd184e4b65a0)
+        ;
+
+        
+    
+    
+            var marker_119805e2d019464897b1414b42030bfe = L.marker(
+                [40.409179, -3.6478362],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e07d6255158e4d8c8b1e4d77a2f67927 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_119805e2d019464897b1414b42030bfe.setIcon(icon_e07d6255158e4d8c8b1e4d77a2f67927);
+        
+    
+        var popup_cdf9621cb6e04eb2b98e59612f66ef2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0e2d0c9c2344a738c43dbcb831f06b9 = $(`<div id="html_a0e2d0c9c2344a738c43dbcb831f06b9" style="width: 100.0%; height: 100.0%;">Podología y fisioterapia</div>`)[0];
+            popup_cdf9621cb6e04eb2b98e59612f66ef2c.setContent(html_a0e2d0c9c2344a738c43dbcb831f06b9);
+        
+
+        marker_119805e2d019464897b1414b42030bfe.bindPopup(popup_cdf9621cb6e04eb2b98e59612f66ef2c)
+        ;
+
+        
+    
+    
+            var marker_7b642876574648d888cb1f2d850589e2 = L.marker(
+                [40.4776394, -3.6894697],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_433fc85fcbe4499483c4a77b88440e2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b642876574648d888cb1f2d850589e2.setIcon(icon_433fc85fcbe4499483c4a77b88440e2b);
+        
+    
+        var popup_eb98be81198d4d0f92742b35b09af098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f011e8a3eb324c28993449efea28326d = $(`<div id="html_f011e8a3eb324c28993449efea28326d" style="width: 100.0%; height: 100.0%;">Centro de Medicina Deportiva Quirónsalud en la Torre Caleido</div>`)[0];
+            popup_eb98be81198d4d0f92742b35b09af098.setContent(html_f011e8a3eb324c28993449efea28326d);
+        
+
+        marker_7b642876574648d888cb1f2d850589e2.bindPopup(popup_eb98be81198d4d0f92742b35b09af098)
+        ;
+
+        
+    
+    
+            var marker_4eb0940894664761b728b671d065d73f = L.marker(
+                [40.4328451, -3.6802349],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_0b89d58b253240f3a47456094f13b41b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4eb0940894664761b728b671d065d73f.setIcon(icon_0b89d58b253240f3a47456094f13b41b);
+        
+    
+        var popup_c7f829a4d4be4e6b8444ca41a305ab72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62208c17d48e467d9b028117bbd8b464 = $(`<div id="html_62208c17d48e467d9b028117bbd8b464" style="width: 100.0%; height: 100.0%;">Clínica Arpa Médica</div>`)[0];
+            popup_c7f829a4d4be4e6b8444ca41a305ab72.setContent(html_62208c17d48e467d9b028117bbd8b464);
+        
+
+        marker_4eb0940894664761b728b671d065d73f.bindPopup(popup_c7f829a4d4be4e6b8444ca41a305ab72)
+        ;
+
+        
+    
+    
+            var marker_e511f4afd6b34828a8a91fb988e5adf6 = L.marker(
+                [40.4496271, -3.6859976],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_77f6e98d4a0a4747b9bbcc80fb428be3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e511f4afd6b34828a8a91fb988e5adf6.setIcon(icon_77f6e98d4a0a4747b9bbcc80fb428be3);
+        
+    
+        var popup_f0f9132d58714316ac08765a2d562815 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf6b835615e8407fa79a58c274cde803 = $(`<div id="html_bf6b835615e8407fa79a58c274cde803" style="width: 100.0%; height: 100.0%;">Clínica Arpa Médica, Dr Palomo</div>`)[0];
+            popup_f0f9132d58714316ac08765a2d562815.setContent(html_bf6b835615e8407fa79a58c274cde803);
+        
+
+        marker_e511f4afd6b34828a8a91fb988e5adf6.bindPopup(popup_f0f9132d58714316ac08765a2d562815)
+        ;
+
+        
+    
+    
+            var marker_ecbedff61c86404c918a14927b9a4af2 = L.marker(
+                [40.4783492, -3.7078802],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_12d0c7fe2da14fd2b9ec06df0656b8bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecbedff61c86404c918a14927b9a4af2.setIcon(icon_12d0c7fe2da14fd2b9ec06df0656b8bf);
+        
+    
+        var popup_603933286bc74088a97517afdf7d727c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_588b55a213fc420aa01265082d5a5898 = $(`<div id="html_588b55a213fc420aa01265082d5a5898" style="width: 100.0%; height: 100.0%;">Centro Médico Vaguada</div>`)[0];
+            popup_603933286bc74088a97517afdf7d727c.setContent(html_588b55a213fc420aa01265082d5a5898);
+        
+
+        marker_ecbedff61c86404c918a14927b9a4af2.bindPopup(popup_603933286bc74088a97517afdf7d727c)
+        ;
+
+        
+    
+    
+            var marker_0748604dfa2847fa800a3a129ae79974 = L.marker(
+                [40.4501887, -3.7093065],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7db2e46cb80141c5ad2ed0aaec4b9544 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0748604dfa2847fa800a3a129ae79974.setIcon(icon_7db2e46cb80141c5ad2ed0aaec4b9544);
+        
+    
+        var popup_fc39613939da462e8ab0160ca9774d76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_340c3f86f07f4ce29c71614e6effa451 = $(`<div id="html_340c3f86f07f4ce29c71614e6effa451" style="width: 100.0%; height: 100.0%;">Policlínica universitaria CEU san Pablo</div>`)[0];
+            popup_fc39613939da462e8ab0160ca9774d76.setContent(html_340c3f86f07f4ce29c71614e6effa451);
+        
+
+        marker_0748604dfa2847fa800a3a129ae79974.bindPopup(popup_fc39613939da462e8ab0160ca9774d76)
+        ;
+
+        
+    
+    
+            var marker_039600833ce54afc8677b7ab29ea4f15 = L.marker(
+                [40.4329668, -3.6948081],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_a1198089621c48b086ce231afaad47b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_039600833ce54afc8677b7ab29ea4f15.setIcon(icon_a1198089621c48b086ce231afaad47b3);
+        
+    
+        var popup_4fe2b71eaeaf497893f712c1c8decf8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c195b9dc184a89a4e8c808165f476a = $(`<div id="html_09c195b9dc184a89a4e8c808165f476a" style="width: 100.0%; height: 100.0%;">Clínica Universal</div>`)[0];
+            popup_4fe2b71eaeaf497893f712c1c8decf8c.setContent(html_09c195b9dc184a89a4e8c808165f476a);
+        
+
+        marker_039600833ce54afc8677b7ab29ea4f15.bindPopup(popup_4fe2b71eaeaf497893f712c1c8decf8c)
+        ;
+
+        
+    
+    
+            var marker_b1f085166c7f4769981437f441aa27a4 = L.marker(
+                [40.4571436, -3.6791819],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_5bb893f08b6e4751afaa5bdfb0f5beac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1f085166c7f4769981437f441aa27a4.setIcon(icon_5bb893f08b6e4751afaa5bdfb0f5beac);
+        
+    
+        var popup_07b74ddb6eb2432c95eb00996a71255d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25130f70c5134221b174925a3261f195 = $(`<div id="html_25130f70c5134221b174925a3261f195" style="width: 100.0%; height: 100.0%;">Cristina Álvarez. Medicina estética</div>`)[0];
+            popup_07b74ddb6eb2432c95eb00996a71255d.setContent(html_25130f70c5134221b174925a3261f195);
+        
+
+        marker_b1f085166c7f4769981437f441aa27a4.bindPopup(popup_07b74ddb6eb2432c95eb00996a71255d)
+        ;
+
+        
+    
+    
+            var marker_bfb1983c5e444dc2bd95541aff592e08 = L.marker(
+                [40.4661693, -3.6905628],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_1e61277f09184325a0d372dd384b0f1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bfb1983c5e444dc2bd95541aff592e08.setIcon(icon_1e61277f09184325a0d372dd384b0f1b);
+        
+    
+        var popup_c382af66f0ac4a6fae5ec14058b3040b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29454ed8334c438a9be568d33fb62f47 = $(`<div id="html_29454ed8334c438a9be568d33fb62f47" style="width: 100.0%; height: 100.0%;">Clínica González & Campos</div>`)[0];
+            popup_c382af66f0ac4a6fae5ec14058b3040b.setContent(html_29454ed8334c438a9be568d33fb62f47);
+        
+
+        marker_bfb1983c5e444dc2bd95541aff592e08.bindPopup(popup_c382af66f0ac4a6fae5ec14058b3040b)
+        ;
+
+        
+    
+    
+            var marker_f271c11304f8470b8da86c2cf24b786f = L.marker(
+                [40.4122031, -3.6937533],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_d7941eff97b34388b6e36f33fd311df4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f271c11304f8470b8da86c2cf24b786f.setIcon(icon_d7941eff97b34388b6e36f33fd311df4);
+        
+    
+        var popup_d2c1bd9f8c2c46789566e3d7f61db7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6daf152ee66e450a8b5826367e7ae090 = $(`<div id="html_6daf152ee66e450a8b5826367e7ae090" style="width: 100.0%; height: 100.0%;">Doctor Fernando Caudevilla</div>`)[0];
+            popup_d2c1bd9f8c2c46789566e3d7f61db7f1.setContent(html_6daf152ee66e450a8b5826367e7ae090);
+        
+
+        marker_f271c11304f8470b8da86c2cf24b786f.bindPopup(popup_d2c1bd9f8c2c46789566e3d7f61db7f1)
+        ;
+
+        
+    
+    
+            var marker_04950c6e0c0d4f4b983a36dad519728b = L.marker(
+                [40.4197511, -3.6147589],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_cee514397de7477ca21ae9c86c3fe22d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04950c6e0c0d4f4b983a36dad519728b.setIcon(icon_cee514397de7477ca21ae9c86c3fe22d);
+        
+    
+        var popup_9c35d88ca2fa4e1dba41d011ab20c982 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aa86b98e0de41e383314906f7dcfd7e = $(`<div id="html_5aa86b98e0de41e383314906f7dcfd7e" style="width: 100.0%; height: 100.0%;">NO NAME</div>`)[0];
+            popup_9c35d88ca2fa4e1dba41d011ab20c982.setContent(html_5aa86b98e0de41e383314906f7dcfd7e);
+        
+
+        marker_04950c6e0c0d4f4b983a36dad519728b.bindPopup(popup_9c35d88ca2fa4e1dba41d011ab20c982)
+        ;
+
+        
+    
+    
+            var marker_55e849bb9d54471cb7332ab8bc9ebd01 = L.marker(
+                [40.5374219, -3.6370239],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c6306a8c2a5c433b874a96479e6c18e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55e849bb9d54471cb7332ab8bc9ebd01.setIcon(icon_c6306a8c2a5c433b874a96479e6c18e8);
+        
+    
+        var popup_7d84fc96e0a54bbc8aa1151e9eae6645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c22817934114c8db5fa8090fd631aea = $(`<div id="html_2c22817934114c8db5fa8090fd631aea" style="width: 100.0%; height: 100.0%;">Sanitas Millenium Alcobendas</div>`)[0];
+            popup_7d84fc96e0a54bbc8aa1151e9eae6645.setContent(html_2c22817934114c8db5fa8090fd631aea);
+        
+
+        marker_55e849bb9d54471cb7332ab8bc9ebd01.bindPopup(popup_7d84fc96e0a54bbc8aa1151e9eae6645)
+        ;
+
+        
+    
+    
+            var marker_3dd345c7d883430ca59e0995b31737e7 = L.marker(
+                [40.4025742, -3.620855],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c5102df8dc804fe898791b4e5a87b234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3dd345c7d883430ca59e0995b31737e7.setIcon(icon_c5102df8dc804fe898791b4e5a87b234);
+        
+    
+        var popup_ad5d5865693e4afdb22467c88c999660 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2cc031b4b0d4a0bb0aabcfc2e7590b0 = $(`<div id="html_a2cc031b4b0d4a0bb0aabcfc2e7590b0" style="width: 100.0%; height: 100.0%;">Centro Médico Valdebernardo</div>`)[0];
+            popup_ad5d5865693e4afdb22467c88c999660.setContent(html_a2cc031b4b0d4a0bb0aabcfc2e7590b0);
+        
+
+        marker_3dd345c7d883430ca59e0995b31737e7.bindPopup(popup_ad5d5865693e4afdb22467c88c999660)
+        ;
+
+        
+    
+    
+            var marker_3603d33c83184d99945f86aa2b5b1e68 = L.marker(
+                [40.4016887, -3.6785015],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_616a3feca3a6454180aca374f76a2d70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3603d33c83184d99945f86aa2b5b1e68.setIcon(icon_616a3feca3a6454180aca374f76a2d70);
+        
+    
+        var popup_57defdb582064e01ac567d7eb18ac493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7d53df2a2fe456fbf5b9870930f93f5 = $(`<div id="html_b7d53df2a2fe456fbf5b9870930f93f5" style="width: 100.0%; height: 100.0%;">Centro Médico Maestranza</div>`)[0];
+            popup_57defdb582064e01ac567d7eb18ac493.setContent(html_b7d53df2a2fe456fbf5b9870930f93f5);
+        
+
+        marker_3603d33c83184d99945f86aa2b5b1e68.bindPopup(popup_57defdb582064e01ac567d7eb18ac493)
+        ;
+
+        
+    
+    
+            var marker_2b2b9a90eb0f446f9c9cc117cead9b5e = L.marker(
+                [40.4589346, -3.6847588],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_99b7ce858923417387e35f79e4005f79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b2b9a90eb0f446f9c9cc117cead9b5e.setIcon(icon_99b7ce858923417387e35f79e4005f79);
+        
+    
+        var popup_b38c2455f45e43ef8eed445baa04ce62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfe48f758e604f5086228e4c24a23b6c = $(`<div id="html_bfe48f758e604f5086228e4c24a23b6c" style="width: 100.0%; height: 100.0%;">Instituto de Investigación del Sueño</div>`)[0];
+            popup_b38c2455f45e43ef8eed445baa04ce62.setContent(html_bfe48f758e604f5086228e4c24a23b6c);
+        
+
+        marker_2b2b9a90eb0f446f9c9cc117cead9b5e.bindPopup(popup_b38c2455f45e43ef8eed445baa04ce62)
+        ;
+
+        
+    
+    
+            var marker_01d262f7493744149514755d92e02629 = L.marker(
+                [40.4483137, -3.7035847],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_9777ed1a9a2646b2a63effb17912026d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01d262f7493744149514755d92e02629.setIcon(icon_9777ed1a9a2646b2a63effb17912026d);
+        
+    
+        var popup_bceb2bb9d73a45c3833ca0ef34376192 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_960898a27b3d4d1ab81e1de0685930f3 = $(`<div id="html_960898a27b3d4d1ab81e1de0685930f3" style="width: 100.0%; height: 100.0%;">Medirecon</div>`)[0];
+            popup_bceb2bb9d73a45c3833ca0ef34376192.setContent(html_960898a27b3d4d1ab81e1de0685930f3);
+        
+
+        marker_01d262f7493744149514755d92e02629.bindPopup(popup_bceb2bb9d73a45c3833ca0ef34376192)
+        ;
+
+        
+    
+    
+            var marker_fa79f3605b4548a7bebfcd65fbe07218 = L.marker(
+                [40.4439805, -3.7028335],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e4decb645c9b4c0abe6a56d2c24b4018 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa79f3605b4548a7bebfcd65fbe07218.setIcon(icon_e4decb645c9b4c0abe6a56d2c24b4018);
+        
+    
+        var popup_49aff465cd4b4ab7a71d894003f4b5f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5154beb097774f108be449f1e0b43203 = $(`<div id="html_5154beb097774f108be449f1e0b43203" style="width: 100.0%; height: 100.0%;">Dorsia Clínicas</div>`)[0];
+            popup_49aff465cd4b4ab7a71d894003f4b5f6.setContent(html_5154beb097774f108be449f1e0b43203);
+        
+
+        marker_fa79f3605b4548a7bebfcd65fbe07218.bindPopup(popup_49aff465cd4b4ab7a71d894003f4b5f6)
+        ;
+
+        
+    
+    
+            var marker_f2abfa46f8ef41e4ad63f51b951a782d = L.marker(
+                [40.4644699, -3.7098498],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_0da788e053f34ab3999dff0804063130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f2abfa46f8ef41e4ad63f51b951a782d.setIcon(icon_0da788e053f34ab3999dff0804063130);
+        
+    
+        var popup_5654d75c7a174ec88573baf7c0131fd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfcf9c44e8ff4c6e8aa7d4766a0ceb9a = $(`<div id="html_bfcf9c44e8ff4c6e8aa7d4766a0ceb9a" style="width: 100.0%; height: 100.0%;">Clínica del Pie</div>`)[0];
+            popup_5654d75c7a174ec88573baf7c0131fd1.setContent(html_bfcf9c44e8ff4c6e8aa7d4766a0ceb9a);
+        
+
+        marker_f2abfa46f8ef41e4ad63f51b951a782d.bindPopup(popup_5654d75c7a174ec88573baf7c0131fd1)
+        ;
+
+        
+    
+    
+            var marker_019575c9fb12444485f74008060e92c4 = L.marker(
+                [40.4332244, -3.6713547],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_f99b7757bf8a469e81758a5b333eb23a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_019575c9fb12444485f74008060e92c4.setIcon(icon_f99b7757bf8a469e81758a5b333eb23a);
+        
+    
+        var popup_c96d196d72364c23bc48cd0f961016d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6e6b2049b1345c19e0661c1f71b9f02 = $(`<div id="html_f6e6b2049b1345c19e0661c1f71b9f02" style="width: 100.0%; height: 100.0%;">Centros élite. Medicina estética</div>`)[0];
+            popup_c96d196d72364c23bc48cd0f961016d9.setContent(html_f6e6b2049b1345c19e0661c1f71b9f02);
+        
+
+        marker_019575c9fb12444485f74008060e92c4.bindPopup(popup_c96d196d72364c23bc48cd0f961016d9)
+        ;
+
+        
+    
+    
+            var marker_a775480105454e0999d7a448939a0fd1 = L.marker(
+                [40.4609298, -3.6959863],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_17ced63afae4490ebf7960310d98c3f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a775480105454e0999d7a448939a0fd1.setIcon(icon_17ced63afae4490ebf7960310d98c3f8);
+        
+    
+        var popup_27622b3e123c44fba0905a7eafab3a08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7dfe63299fb42d68b3b733898e7ce38 = $(`<div id="html_c7dfe63299fb42d68b3b733898e7ce38" style="width: 100.0%; height: 100.0%;">Centros élite. Medicina estética</div>`)[0];
+            popup_27622b3e123c44fba0905a7eafab3a08.setContent(html_c7dfe63299fb42d68b3b733898e7ce38);
+        
+
+        marker_a775480105454e0999d7a448939a0fd1.bindPopup(popup_27622b3e123c44fba0905a7eafab3a08)
+        ;
+
+        
+    
+    
+            var marker_998c214017bc4045a078bdb7dd14233d = L.marker(
+                [40.4274249, -3.6722622],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b17d02f4c80349978a10e3d602d3221f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_998c214017bc4045a078bdb7dd14233d.setIcon(icon_b17d02f4c80349978a10e3d602d3221f);
+        
+    
+        var popup_78da660f524148398287a19b3b6f456d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddb5fc9c98ca402783fd25b2b9b7662c = $(`<div id="html_ddb5fc9c98ca402783fd25b2b9b7662c" style="width: 100.0%; height: 100.0%;">Cristina Álvarez. Medicina estética</div>`)[0];
+            popup_78da660f524148398287a19b3b6f456d.setContent(html_ddb5fc9c98ca402783fd25b2b9b7662c);
+        
+
+        marker_998c214017bc4045a078bdb7dd14233d.bindPopup(popup_78da660f524148398287a19b3b6f456d)
+        ;
+
+        
+    
+    
+            var marker_8855e3d94b5b4c3ba0da4e77cbda4077 = L.marker(
+                [40.4466542, -3.696187],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7203d155523e48048b7cd2812516654b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8855e3d94b5b4c3ba0da4e77cbda4077.setIcon(icon_7203d155523e48048b7cd2812516654b);
+        
+    
+        var popup_ae097144f29d4791aa2e5cf03cdc7d4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36a6f6d0a54c431cbec86758d3075eba = $(`<div id="html_36a6f6d0a54c431cbec86758d3075eba" style="width: 100.0%; height: 100.0%;">IMD Instituto Médico Dermatológico</div>`)[0];
+            popup_ae097144f29d4791aa2e5cf03cdc7d4d.setContent(html_36a6f6d0a54c431cbec86758d3075eba);
+        
+
+        marker_8855e3d94b5b4c3ba0da4e77cbda4077.bindPopup(popup_ae097144f29d4791aa2e5cf03cdc7d4d)
+        ;
+
+        
+    
+    
+            var marker_e543a90537f445ee96b912fabfb98a85 = L.marker(
+                [40.4426627, -3.6824571],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ab66f1cd5bbc47d1849e0b6d682a1efd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e543a90537f445ee96b912fabfb98a85.setIcon(icon_ab66f1cd5bbc47d1849e0b6d682a1efd);
+        
+    
+        var popup_d71fad29fbc745bcb0044c33a9f84c41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98d74f53f7764a999e452774f3ec1269 = $(`<div id="html_98d74f53f7764a999e452774f3ec1269" style="width: 100.0%; height: 100.0%;">Instituto Madrileño de Oncología</div>`)[0];
+            popup_d71fad29fbc745bcb0044c33a9f84c41.setContent(html_98d74f53f7764a999e452774f3ec1269);
+        
+
+        marker_e543a90537f445ee96b912fabfb98a85.bindPopup(popup_d71fad29fbc745bcb0044c33a9f84c41)
+        ;
+
+        
+    
+    
+            var marker_d285c71e709349b9bf292794719259b0 = L.marker(
+                [40.4587714, -3.6962502],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_c7aa915e58684c53b85121e5c6a7b01f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d285c71e709349b9bf292794719259b0.setIcon(icon_c7aa915e58684c53b85121e5c6a7b01f);
+        
+    
+        var popup_2f4a869b5e454517b61018058f8669dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88177fae9d634b5fb9b8993327a4947e = $(`<div id="html_88177fae9d634b5fb9b8993327a4947e" style="width: 100.0%; height: 100.0%;">Clínica Dator</div>`)[0];
+            popup_2f4a869b5e454517b61018058f8669dc.setContent(html_88177fae9d634b5fb9b8993327a4947e);
+        
+
+        marker_d285c71e709349b9bf292794719259b0.bindPopup(popup_2f4a869b5e454517b61018058f8669dc)
+        ;
+
+        
+    
+    
+            var marker_c177a8aec65e46c981011dcbaf6c4479 = L.marker(
+                [40.4694526, -3.6990817],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_bcce42cd702a417cab4aa17fb64d14a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c177a8aec65e46c981011dcbaf6c4479.setIcon(icon_bcce42cd702a417cab4aa17fb64d14a4);
+        
+    
+        var popup_74d4d324b0ac4aa7aa5dd4206f1d7e79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_134fa75fe5d94e0da7f0a24e30c3a348 = $(`<div id="html_134fa75fe5d94e0da7f0a24e30c3a348" style="width: 100.0%; height: 100.0%;">Podólogo</div>`)[0];
+            popup_74d4d324b0ac4aa7aa5dd4206f1d7e79.setContent(html_134fa75fe5d94e0da7f0a24e30c3a348);
+        
+
+        marker_c177a8aec65e46c981011dcbaf6c4479.bindPopup(popup_74d4d324b0ac4aa7aa5dd4206f1d7e79)
+        ;
+
+        
+    
+    
+            var marker_a52457d9118e46349ab985c198e47791 = L.marker(
+                [40.4634645, -3.6290529],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_46948215e6124511ab13c0ca1ad789d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a52457d9118e46349ab985c198e47791.setIcon(icon_46948215e6124511ab13c0ca1ad789d3);
+        
+    
+        var popup_fd00ecd5fb4b4784864fa126a09fc15d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfe68b33b1c948b4968526e8bcf9b44f = $(`<div id="html_bfe68b33b1c948b4968526e8bcf9b44f" style="width: 100.0%; height: 100.0%;">Clinica Silvano</div>`)[0];
+            popup_fd00ecd5fb4b4784864fa126a09fc15d.setContent(html_bfe68b33b1c948b4968526e8bcf9b44f);
+        
+
+        marker_a52457d9118e46349ab985c198e47791.bindPopup(popup_fd00ecd5fb4b4784864fa126a09fc15d)
+        ;
+
+        
+    
+    
+            var marker_219bdb1c6e6c40b7b8d06e2ba9f19cc7 = L.marker(
+                [40.4647257, -3.6352147],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ea958e6c8b31477ba195737839aa02b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_219bdb1c6e6c40b7b8d06e2ba9f19cc7.setIcon(icon_ea958e6c8b31477ba195737839aa02b9);
+        
+    
+        var popup_8c9f124060f24429852b4caef321292e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d0539625fe345e48fd0a2ced66b82b2 = $(`<div id="html_5d0539625fe345e48fd0a2ced66b82b2" style="width: 100.0%; height: 100.0%;">Clinica Canillas</div>`)[0];
+            popup_8c9f124060f24429852b4caef321292e.setContent(html_5d0539625fe345e48fd0a2ced66b82b2);
+        
+
+        marker_219bdb1c6e6c40b7b8d06e2ba9f19cc7.bindPopup(popup_8c9f124060f24429852b4caef321292e)
+        ;
+
+        
+    
+    
+            var marker_74277d7a3e0648ff9549f89b3860fe37 = L.marker(
+                [40.4858593, -3.7095705],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_2ba5c91b6615499cb038651ec37d619c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74277d7a3e0648ff9549f89b3860fe37.setIcon(icon_2ba5c91b6615499cb038651ec37d619c);
+        
+    
+        var popup_7a52c0b29e7c4f1fabed63bf2f462ad9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d07a4272dcf641d58460258dc3a681f0 = $(`<div id="html_d07a4272dcf641d58460258dc3a681f0" style="width: 100.0%; height: 100.0%;">Clínica Murube</div>`)[0];
+            popup_7a52c0b29e7c4f1fabed63bf2f462ad9.setContent(html_d07a4272dcf641d58460258dc3a681f0);
+        
+
+        marker_74277d7a3e0648ff9549f89b3860fe37.bindPopup(popup_7a52c0b29e7c4f1fabed63bf2f462ad9)
+        ;
+
+        
+    
+    
+            var marker_2b699640fb914980925aec2bd1cd405d = L.marker(
+                [40.4347908, -3.7035739],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_9baac8098e1c41c18ee473bec133baa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b699640fb914980925aec2bd1cd405d.setIcon(icon_9baac8098e1c41c18ee473bec133baa7);
+        
+    
+        var popup_44ddeba7082e40a6b180baf3cffec53c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0a8f5418a6c4f74be929ed866d60285 = $(`<div id="html_f0a8f5418a6c4f74be929ed866d60285" style="width: 100.0%; height: 100.0%;">Clínica Román</div>`)[0];
+            popup_44ddeba7082e40a6b180baf3cffec53c.setContent(html_f0a8f5418a6c4f74be929ed866d60285);
+        
+
+        marker_2b699640fb914980925aec2bd1cd405d.bindPopup(popup_44ddeba7082e40a6b180baf3cffec53c)
+        ;
+
+        
+    
+    
+            var marker_64b31763ac1444e4b0582a1ec95b5fc7 = L.marker(
+                [40.4344124, -3.7029297],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_08215a4f883443eaa8e55f38fe853253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64b31763ac1444e4b0582a1ec95b5fc7.setIcon(icon_08215a4f883443eaa8e55f38fe853253);
+        
+    
+        var popup_9e51b8f10a12497d8425e1b5c6aff7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35719a8bccb2424ba1a4c7a1e2ed4648 = $(`<div id="html_35719a8bccb2424ba1a4c7a1e2ed4648" style="width: 100.0%; height: 100.0%;">Clínica Román</div>`)[0];
+            popup_9e51b8f10a12497d8425e1b5c6aff7e6.setContent(html_35719a8bccb2424ba1a4c7a1e2ed4648);
+        
+
+        marker_64b31763ac1444e4b0582a1ec95b5fc7.bindPopup(popup_9e51b8f10a12497d8425e1b5c6aff7e6)
+        ;
+
+        
+    
+    
+            var marker_99b2d2b691c14c52b149119e87ae7f17 = L.marker(
+                [40.421758, -3.6770426],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_377c0c54f1bb463b839058c8a7125c15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99b2d2b691c14c52b149119e87ae7f17.setIcon(icon_377c0c54f1bb463b839058c8a7125c15);
+        
+    
+        var popup_fb026d5ff23e42528d22b4de3ba850e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86facf48c2674a16912eaecf6c5777ad = $(`<div id="html_86facf48c2674a16912eaecf6c5777ad" style="width: 100.0%; height: 100.0%;">Madrid Health Chiropractic</div>`)[0];
+            popup_fb026d5ff23e42528d22b4de3ba850e7.setContent(html_86facf48c2674a16912eaecf6c5777ad);
+        
+
+        marker_99b2d2b691c14c52b149119e87ae7f17.bindPopup(popup_fb026d5ff23e42528d22b4de3ba850e7)
+        ;
+
+        
+    
+    
+            var marker_605a0269ab014bf787eb56dfbbfaeff6 = L.marker(
+                [40.4348011, -3.7040455],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_2209bb431cce45cc95199ba790326197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_605a0269ab014bf787eb56dfbbfaeff6.setIcon(icon_2209bb431cce45cc95199ba790326197);
+        
+    
+        var popup_ca3ec3d28f754502b4ea599212fede23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8de67bcc83ee4bb598a02b29c82303c4 = $(`<div id="html_8de67bcc83ee4bb598a02b29c82303c4" style="width: 100.0%; height: 100.0%;">Mommy&me 4D. Ecografías 4D</div>`)[0];
+            popup_ca3ec3d28f754502b4ea599212fede23.setContent(html_8de67bcc83ee4bb598a02b29c82303c4);
+        
+
+        marker_605a0269ab014bf787eb56dfbbfaeff6.bindPopup(popup_ca3ec3d28f754502b4ea599212fede23)
+        ;
+
+        
+    
+    
+            var marker_a3fef405a6dc47ea9f8af6d3636002b5 = L.marker(
+                [40.4559203, -3.6890674],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_f78149f4edea4ffa96f7f9b75ec38a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3fef405a6dc47ea9f8af6d3636002b5.setIcon(icon_f78149f4edea4ffa96f7f9b75ec38a9c);
+        
+    
+        var popup_552ccfe52e644d1f8d4c8b1fe7f674d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70d10954aa9f49ed80ce90e9cae851f7 = $(`<div id="html_70d10954aa9f49ed80ce90e9cae851f7" style="width: 100.0%; height: 100.0%;">Dr. Fernando Itza Santos</div>`)[0];
+            popup_552ccfe52e644d1f8d4c8b1fe7f674d1.setContent(html_70d10954aa9f49ed80ce90e9cae851f7);
+        
+
+        marker_a3fef405a6dc47ea9f8af6d3636002b5.bindPopup(popup_552ccfe52e644d1f8d4c8b1fe7f674d1)
+        ;
+
+        
+    
+    
+            var marker_d9e6ab12305645d98e3c89c41da04efb = L.marker(
+                [40.483217, -3.7029857],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ab7999011edb4d14b81e0a0ca34fa0c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9e6ab12305645d98e3c89c41da04efb.setIcon(icon_ab7999011edb4d14b81e0a0ca34fa0c9);
+        
+    
+        var popup_25ae79db62f44f16a422b060bd5d7aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_717f0dfc087149e0a2105ab86f906c52 = $(`<div id="html_717f0dfc087149e0a2105ab86f906c52" style="width: 100.0%; height: 100.0%;">Clínica de Fisioterapia Infantil Laura Martínez Martínez</div>`)[0];
+            popup_25ae79db62f44f16a422b060bd5d7aa5.setContent(html_717f0dfc087149e0a2105ab86f906c52);
+        
+
+        marker_d9e6ab12305645d98e3c89c41da04efb.bindPopup(popup_25ae79db62f44f16a422b060bd5d7aa5)
+        ;
+
+        
+    
+    
+            var marker_09c6cdd50f0141aab96d2929fc17cf6f = L.marker(
+                [40.4846362, -3.7002986],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_5b1d48d3d628426fb92a2c3abb16c401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09c6cdd50f0141aab96d2929fc17cf6f.setIcon(icon_5b1d48d3d628426fb92a2c3abb16c401);
+        
+    
+        var popup_5a3cd74517814b74b7865d69b6e875b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08669472b4324bc0bfcf014983d36bbb = $(`<div id="html_08669472b4324bc0bfcf014983d36bbb" style="width: 100.0%; height: 100.0%;">Los Arcos Fisioterapia</div>`)[0];
+            popup_5a3cd74517814b74b7865d69b6e875b0.setContent(html_08669472b4324bc0bfcf014983d36bbb);
+        
+
+        marker_09c6cdd50f0141aab96d2929fc17cf6f.bindPopup(popup_5a3cd74517814b74b7865d69b6e875b0)
+        ;
+
+        
+    
+    
+            var marker_0e8b9259dcb942e9b3bd95c9d6295e7c = L.marker(
+                [40.4219003, -3.6813572],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_20b50d1e8c684a1983465a54f33a4d70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e8b9259dcb942e9b3bd95c9d6295e7c.setIcon(icon_20b50d1e8c684a1983465a54f33a4d70);
+        
+    
+        var popup_68e17352fa124d1f9ce1fa17c7e0463b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_163d81301e9348fdb5452823fec81679 = $(`<div id="html_163d81301e9348fdb5452823fec81679" style="width: 100.0%; height: 100.0%;">Consultorio médico</div>`)[0];
+            popup_68e17352fa124d1f9ce1fa17c7e0463b.setContent(html_163d81301e9348fdb5452823fec81679);
+        
+
+        marker_0e8b9259dcb942e9b3bd95c9d6295e7c.bindPopup(popup_68e17352fa124d1f9ce1fa17c7e0463b)
+        ;
+
+        
+    
+    
+            var marker_ed997edbe6c0426db96362d357deb9a1 = L.marker(
+                [40.4246747, -3.6981703],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_b1566d73dada44079f1dbf329ad8fe6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed997edbe6c0426db96362d357deb9a1.setIcon(icon_b1566d73dada44079f1dbf329ad8fe6a);
+        
+    
+        var popup_ef8394256268478c8ea7e3cace0d38ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c877ba4d962b4e35989f44898ab7ee81 = $(`<div id="html_c877ba4d962b4e35989f44898ab7ee81" style="width: 100.0%; height: 100.0%;">Gineco</div>`)[0];
+            popup_ef8394256268478c8ea7e3cace0d38ea.setContent(html_c877ba4d962b4e35989f44898ab7ee81);
+        
+
+        marker_ed997edbe6c0426db96362d357deb9a1.bindPopup(popup_ef8394256268478c8ea7e3cace0d38ea)
+        ;
+
+        
+    
+    
+            var marker_08cd9ff43b9b4ba0bed4a89a7602b896 = L.marker(
+                [40.4760669, -3.70813],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_7f4a33bb8614448cac034d432c72582f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08cd9ff43b9b4ba0bed4a89a7602b896.setIcon(icon_7f4a33bb8614448cac034d432c72582f);
+        
+    
+        var popup_e10981a2e284477b94d0c38404a186c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26533e4240e6458392de110b8d7aa544 = $(`<div id="html_26533e4240e6458392de110b8d7aa544" style="width: 100.0%; height: 100.0%;">NO NAME</div>`)[0];
+            popup_e10981a2e284477b94d0c38404a186c9.setContent(html_26533e4240e6458392de110b8d7aa544);
+        
+
+        marker_08cd9ff43b9b4ba0bed4a89a7602b896.bindPopup(popup_e10981a2e284477b94d0c38404a186c9)
+        ;
+
+        
+    
+    
+            var marker_ecf50b3133de4b7281277e17672fddd2 = L.marker(
+                [40.427652, -3.6783375],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_da82ca7618d741e29c126118a6a023d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecf50b3133de4b7281277e17672fddd2.setIcon(icon_da82ca7618d741e29c126118a6a023d1);
+        
+    
+        var popup_5d094514e8d84a58bfeba8c87a47ebe4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a548f34b197a4f468fac778dd677f601 = $(`<div id="html_a548f34b197a4f468fac778dd677f601" style="width: 100.0%; height: 100.0%;">Nutricionista Terica Uriol</div>`)[0];
+            popup_5d094514e8d84a58bfeba8c87a47ebe4.setContent(html_a548f34b197a4f468fac778dd677f601);
+        
+
+        marker_ecf50b3133de4b7281277e17672fddd2.bindPopup(popup_5d094514e8d84a58bfeba8c87a47ebe4)
+        ;
+
+        
+    
+    
+            var marker_9014f4989ba94611a83f5cdb321b82c5 = L.marker(
+                [40.4397078, -3.7097429],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ace53c2cad42467091bf19bd20d68ad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9014f4989ba94611a83f5cdb321b82c5.setIcon(icon_ace53c2cad42467091bf19bd20d68ad1);
+        
+    
+        var popup_197224a306f4469ca7ddd6bf917d3c56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1060f4973be64eafafbb93c6fdb09dfa = $(`<div id="html_1060f4973be64eafafbb93c6fdb09dfa" style="width: 100.0%; height: 100.0%;">IOA Madrid - Innova Ocular</div>`)[0];
+            popup_197224a306f4469ca7ddd6bf917d3c56.setContent(html_1060f4973be64eafafbb93c6fdb09dfa);
+        
+
+        marker_9014f4989ba94611a83f5cdb321b82c5.bindPopup(popup_197224a306f4469ca7ddd6bf917d3c56)
+        ;
+
+        
+    
+    
+            var marker_d12b0a415eb74776a39f340a67b0054c = L.marker(
+                [40.4330631, -3.6735588],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_e68548e7a74d4526ac714e3a3596fccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d12b0a415eb74776a39f340a67b0054c.setIcon(icon_e68548e7a74d4526ac714e3a3596fccc);
+        
+    
+        var popup_367c87fdd9fc460db98e57e901aec933 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46d08c67e1c24813b89b367dc9f1447d = $(`<div id="html_46d08c67e1c24813b89b367dc9f1447d" style="width: 100.0%; height: 100.0%;">Clínica Doctor Naval</div>`)[0];
+            popup_367c87fdd9fc460db98e57e901aec933.setContent(html_46d08c67e1c24813b89b367dc9f1447d);
+        
+
+        marker_d12b0a415eb74776a39f340a67b0054c.bindPopup(popup_367c87fdd9fc460db98e57e901aec933)
+        ;
+
+        
+    
+    
+            var marker_0ae81f3fe3094ba49075b98eb3ba7c40 = L.marker(
+                [40.4520796, -3.6942722],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_65aca24672bf4c369e6d2f8b261f7345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ae81f3fe3094ba49075b98eb3ba7c40.setIcon(icon_65aca24672bf4c369e6d2f8b261f7345);
+        
+    
+        var popup_c7b0110103f5428b8b47bf289bc7588b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a244345727e1414a92c31c134bd313a9 = $(`<div id="html_a244345727e1414a92c31c134bd313a9" style="width: 100.0%; height: 100.0%;">Eternal Beauty Clinic</div>`)[0];
+            popup_c7b0110103f5428b8b47bf289bc7588b.setContent(html_a244345727e1414a92c31c134bd313a9);
+        
+
+        marker_0ae81f3fe3094ba49075b98eb3ba7c40.bindPopup(popup_c7b0110103f5428b8b47bf289bc7588b)
+        ;
+
+        
+    
+    
+            var marker_d0ba66f11ea04c6ead823099142d1130 = L.marker(
+                [40.4964667, -3.6555245],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_bb2bf9f69ac2469fba79978d727a86ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0ba66f11ea04c6ead823099142d1130.setIcon(icon_bb2bf9f69ac2469fba79978d727a86ff);
+        
+    
+        var popup_b1558d80141c4db1831b08b596161895 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4778c14f52c4ecb940ca63e0b95f899 = $(`<div id="html_c4778c14f52c4ecb940ca63e0b95f899" style="width: 100.0%; height: 100.0%;">Centro Médico Sanchinarro</div>`)[0];
+            popup_b1558d80141c4db1831b08b596161895.setContent(html_c4778c14f52c4ecb940ca63e0b95f899);
+        
+
+        marker_d0ba66f11ea04c6ead823099142d1130.bindPopup(popup_b1558d80141c4db1831b08b596161895)
+        ;
+
+        
+    
+    
+            var marker_3434b29701ac4fa4ad022a86c5c25afa = L.marker(
+                [40.4337014, -3.7061503],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_30f0e2dbdba14ac8abee75e6efda7600 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3434b29701ac4fa4ad022a86c5c25afa.setIcon(icon_30f0e2dbdba14ac8abee75e6efda7600);
+        
+    
+        var popup_860cd83cfa844bb89acaa4ebcedd702b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d069c5f09ad94533b72a4702982619f4 = $(`<div id="html_d069c5f09ad94533b72a4702982619f4" style="width: 100.0%; height: 100.0%;">NO NAME</div>`)[0];
+            popup_860cd83cfa844bb89acaa4ebcedd702b.setContent(html_d069c5f09ad94533b72a4702982619f4);
+        
+
+        marker_3434b29701ac4fa4ad022a86c5c25afa.bindPopup(popup_860cd83cfa844bb89acaa4ebcedd702b)
+        ;
+
+        
+    
+    
+            var marker_94a55875957a4007b2bc3327fe99ebfb = L.marker(
+                [40.4542949, -3.6786819],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_4471316ad9c24b7b8e5fc147456747cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94a55875957a4007b2bc3327fe99ebfb.setIcon(icon_4471316ad9c24b7b8e5fc147456747cd);
+        
+    
+        var popup_cfc2cef5de0c4b24a5cb9bc05edc8519 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c558fd9713b4241991838d740933b2f = $(`<div id="html_9c558fd9713b4241991838d740933b2f" style="width: 100.0%; height: 100.0%;">Clínica CRES</div>`)[0];
+            popup_cfc2cef5de0c4b24a5cb9bc05edc8519.setContent(html_9c558fd9713b4241991838d740933b2f);
+        
+
+        marker_94a55875957a4007b2bc3327fe99ebfb.bindPopup(popup_cfc2cef5de0c4b24a5cb9bc05edc8519)
+        ;
+
+        
+    
+    
+            var marker_b349f0046a844257af72a49ea9ffd2b7 = L.marker(
+                [40.4406671, -3.6819085],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_87fe15b721724133910128074307e1bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b349f0046a844257af72a49ea9ffd2b7.setIcon(icon_87fe15b721724133910128074307e1bc);
+        
+    
+        var popup_5c67f13402104183adb2c3ddd509f124 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca6fa58403ad4cf08f1dd9761f83819f = $(`<div id="html_ca6fa58403ad4cf08f1dd9761f83819f" style="width: 100.0%; height: 100.0%;">Centro Médico-Quirúrgico de Enfermedades Digestivas</div>`)[0];
+            popup_5c67f13402104183adb2c3ddd509f124.setContent(html_ca6fa58403ad4cf08f1dd9761f83819f);
+        
+
+        marker_b349f0046a844257af72a49ea9ffd2b7.bindPopup(popup_5c67f13402104183adb2c3ddd509f124)
+        ;
+
+        
+    
+    
+            var marker_6de2e5a1919c4210aeee0cd06bf42f33 = L.marker(
+                [40.4907039, -3.6668882],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_ef059e03916744bea0c9869c57334274 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6de2e5a1919c4210aeee0cd06bf42f33.setIcon(icon_ef059e03916744bea0c9869c57334274);
+        
+    
+        var popup_cd3110eca7a6448eba8df5fd9674e2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2df0ec9b6014358bf23b14dcf0f2397 = $(`<div id="html_b2df0ec9b6014358bf23b14dcf0f2397" style="width: 100.0%; height: 100.0%;">Centro Integral Oncológico Clara Campal</div>`)[0];
+            popup_cd3110eca7a6448eba8df5fd9674e2c9.setContent(html_b2df0ec9b6014358bf23b14dcf0f2397);
+        
+
+        marker_6de2e5a1919c4210aeee0cd06bf42f33.bindPopup(popup_cd3110eca7a6448eba8df5fd9674e2c9)
+        ;
+
+        
+    
+    
+            var marker_b32a98d1c10a47e6a7c1019fa364e205 = L.marker(
+                [40.4591624, -3.6809836],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_975170fe53274b058017fd2898ddeb4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b32a98d1c10a47e6a7c1019fa364e205.setIcon(icon_975170fe53274b058017fd2898ddeb4d);
+        
+    
+        var popup_c5d69e9131d245499d3483b526f053c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_839ddd44fd9240a4b508ac5826da9225 = $(`<div id="html_839ddd44fd9240a4b508ac5826da9225" style="width: 100.0%; height: 100.0%;">Centro Médico Habana</div>`)[0];
+            popup_c5d69e9131d245499d3483b526f053c8.setContent(html_839ddd44fd9240a4b508ac5826da9225);
+        
+
+        marker_b32a98d1c10a47e6a7c1019fa364e205.bindPopup(popup_c5d69e9131d245499d3483b526f053c8)
+        ;
+
+        
+    
+    
+            var marker_78c47d6e514c4845a817dc4dba7ad810 = L.marker(
+                [40.4089075, -3.6702843],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_f645b81131c54f0ca990a1062987f908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78c47d6e514c4845a817dc4dba7ad810.setIcon(icon_f645b81131c54f0ca990a1062987f908);
+        
+    
+        var popup_abd83d7fbf0140d59975a1781e101dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35ef1d655f9441fb9c6ce7ab3bc82e1d = $(`<div id="html_35ef1d655f9441fb9c6ce7ab3bc82e1d" style="width: 100.0%; height: 100.0%;">Centro Médico Retiro</div>`)[0];
+            popup_abd83d7fbf0140d59975a1781e101dd6.setContent(html_35ef1d655f9441fb9c6ce7ab3bc82e1d);
+        
+
+        marker_78c47d6e514c4845a817dc4dba7ad810.bindPopup(popup_abd83d7fbf0140d59975a1781e101dd6)
+        ;
+
+        
+    
+    
+            var marker_d91ab8a705274991834fd213b0683944 = L.marker(
+                [40.4437602, -3.6844406],
+                {}
+            ).addTo(marker_cluster_88acb09d5da74b249680797f3a2e35ea);
+        
+    
+            var icon_f999982348244f58ad1413843ee605e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d91ab8a705274991834fd213b0683944.setIcon(icon_f999982348244f58ad1413843ee605e5);
+        
+    
+        var popup_dda465f5c0934c579e5b0326df25a77a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fa2c375dd904e5e9612e5f732dfc0a9 = $(`<div id="html_7fa2c375dd904e5e9612e5f732dfc0a9" style="width: 100.0%; height: 100.0%;">Clínica Doctora Carla Barber</div>`)[0];
+            popup_dda465f5c0934c579e5b0326df25a77a.setContent(html_7fa2c375dd904e5e9612e5f732dfc0a9);
+        
+
+        marker_d91ab8a705274991834fd213b0683944.bindPopup(popup_dda465f5c0934c579e5b0326df25a77a)
+        ;
+
+        
+    
+</script>
